@@ -26,6 +26,7 @@ from advanced_charts  import (violin_box_plot, sankey_diagram, correlation_heatm
                               waterfall_chart, drilldown_distribution)
 from custom_rules     import evaluate_rules, get_categories, get_payment_methods, RULE_TYPES
 from report_generator import generate_html_report
+from bulk_scanner     import run_bulk_scan
 import plotly.graph_objects as go
 
 # ── Page config ───────────────────────────────────────────────────────────────
@@ -306,9 +307,9 @@ def main():
 
         upload_mode = st.radio(
             "Data source",
-            ["Use sample data", "Upload two CSVs"],
+            ["Use sample data", "Upload two CSVs", "Bulk Scanner"],
             horizontal=False,
-            help="Sample data has built-in drift. Upload your own to detect drift in real data.",
+            help="Sample data · Two-file compare · Bulk scan multiple files at once",
         )
 
         uploaded_base = None
@@ -332,13 +333,38 @@ def main():
                 st.warning("⚠️ Upload both files to enable comparison")
             show_upload_guide()
 
+        # ── Bulk Scanner uploader ────────────────────────────────────────────
+        bulk_files = []
+        if upload_mode == "Bulk Scanner":
+            st.caption("Upload **3 or more** CSV files. Auto-detection runs on each.")
+            bulk_uploads = st.file_uploader(
+                "Upload multiple CSV files",
+                type=["csv"],
+                accept_multiple_files=True,
+                key="bulk_upload",
+                help="Upload any CSV files — columns are auto-detected",
+            )
+            if bulk_uploads:
+                st.success(f"✅ {len(bulk_uploads)} file{'s' if len(bulk_uploads)>1 else ''} uploaded")
+                bulk_files = bulk_uploads
+            if len(bulk_uploads) < 2 if bulk_uploads else True:
+                st.info("Upload at least 2 CSV files to start scanning")
+
+            bulk_mode = st.selectbox(
+                "Comparison mode",
+                ["Consecutive (1→2, 2→3, 3→4…)",
+                 "First vs All (file 1 as fixed baseline)",
+                 "All Pairs (every combination)"],
+                help="How to pair files for comparison",
+            )
+
         st.markdown("---")
         st.markdown("**📅 Date Range Filter**")
         use_date_filter = st.checkbox(
             "Filter by date range",
             value=False,
             help="Only available when using sample data",
-            disabled=(upload_mode == "Upload two CSVs"),
+            disabled=(upload_mode in ["Upload two CSVs", "Bulk Scanner"]),
         )
 
         st.markdown("---")
@@ -412,6 +438,119 @@ def main():
         except Exception as e:
             st.error(f"Could not process CSV: {e}")
             st.info("Try checking: does the file have column headers? Is it a valid CSV?")
+
+    # ── Bulk Scanner mode ────────────────────────────────────────────────────
+    if upload_mode == "Bulk Scanner" and len(bulk_files) >= 2:
+        st.markdown('<div class="section-heading"><span class="sh-icon">🔎</span> Bulk Scanner Results</div>',
+                    unsafe_allow_html=True)
+        st.caption(f"Scanning {len(bulk_files)} files — auto-detecting columns in each.")
+
+        mode_map = {
+            "Consecutive (1→2, 2→3, 3→4…)": "consecutive",
+            "First vs All (file 1 as fixed baseline)": "first_vs_all",
+            "All Pairs (every combination)": "all_pairs",
+        }
+        scan_mode = mode_map.get(bulk_mode, "consecutive")
+
+        with st.spinner(f"Running bulk scan across {len(bulk_files)} files…"):
+            # Auto-map each uploaded file
+            file_map = {}
+            failed   = []
+            for uf in bulk_files:
+                try:
+                    raw = pd.read_csv(uf)
+                    mapped, _, _ = smart_load(raw, uf.name)
+                    file_map[uf.name] = mapped
+                except Exception as ex:
+                    failed.append(f"{uf.name}: {ex}")
+
+            if failed:
+                for msg in failed:
+                    st.warning(f"⚠️ Skipped — {msg}")
+
+            if len(file_map) >= 2:
+                scan_df = run_bulk_scan(file_map, alpha=alpha, mode=scan_mode)
+            else:
+                scan_df = pd.DataFrame()
+
+        if scan_df.empty:
+            st.error("Could not produce any comparisons. Check that files have valid data.")
+        else:
+            # Summary KPIs
+            n_drift    = int(scan_df["Drift"].sum())
+            n_total    = len(scan_df)
+            n_critical = int((scan_df["Severity"] == "🔴 Critical").sum())
+            n_moderate = int((scan_df["Severity"] == "🟡 Moderate").sum())
+
+            bk1, bk2, bk3, bk4 = st.columns(4)
+            bk1.metric("Total Pairs Scanned", n_total)
+            bk2.metric("Pairs with Drift",    n_drift)
+            bk3.metric("Critical",            n_critical)
+            bk4.metric("Moderate",            n_moderate)
+
+            st.markdown("<br>", unsafe_allow_html=True)
+
+            # Colour-coded table
+            def _colour_row(row):
+                if row["Severity"] == "🔴 Critical":
+                    return ["background:rgba(239,71,111,0.10)"] * len(row)
+                if row["Severity"] == "🟡 Moderate":
+                    return ["background:rgba(255,183,3,0.08)"] * len(row)
+                return [""] * len(row)
+
+            display_cols = [
+                "Baseline File","Current File","Severity",
+                "KS Stat","PSI","KS p-value",
+                "Base Mean $","Curr Mean $","Mean Change %",
+                "Cat Chi2 p","Pay Chi2 p",
+            ]
+            display_df = scan_df[[c for c in display_cols if c in scan_df.columns]]
+
+            st.dataframe(
+                display_df.style.apply(_colour_row, axis=1),
+                use_container_width=True,
+                height=min(400, 55 + len(display_df) * 38),
+            )
+
+            # Worst pair details
+            worst = scan_df.iloc[0]
+            if worst["Drift"]:
+                st.markdown(f"""
+                <div style="background:#1a0a10;border:1px solid #EF476F44;border-radius:12px;
+                            padding:.9rem 1.2rem;margin:.8rem 0">
+                  <div style="font-size:.7rem;color:#EF476F;font-weight:700;letter-spacing:.1em;
+                              text-transform:uppercase;margin-bottom:.4rem">Most Drifted Pair</div>
+                  <div style="font-size:.95rem;color:#c8d4f0;font-weight:600">
+                    {worst['Baseline File']}  →  {worst['Current File']}
+                  </div>
+                  <div style="font-size:.82rem;color:#94a3b8;margin-top:.3rem">
+                    KS stat: {worst.get('KS Stat','—')}  ·
+                    PSI: {worst.get('PSI','—')}  ·
+                    Mean change: {worst.get('Mean Change %','—')}%
+                  </div>
+                </div>""", unsafe_allow_html=True)
+
+            # Bulk scan CSV download
+            st.download_button(
+                "⬇️ Download Bulk Scan Results CSV",
+                data=scan_df.drop(columns=["_sort_key"], errors="ignore").to_csv(index=False),
+                file_name=f"bulk_scan_{pd.Timestamp.now().strftime('%Y%m%d_%H%M')}.csv",
+                mime="text/csv",
+                use_container_width=True,
+            )
+
+            # Column mapping summary per file
+            with st.expander("🔍 Column mapping per file", expanded=False):
+                for fname, fdf in file_map.items():
+                    st.caption(f"**{fname}** — {len(fdf):,} rows")
+                    cols_found = {
+                        c: "✅" for c in
+                        ["Date","Purchase_Amount","Product_Category","Payment_Method"]
+                        if c in fdf.columns
+                    }
+                    st.write(cols_found)
+
+        st.divider()
 
     # Date range filter — only for sample data
     if use_date_filter and not using_upload and not combined_df.empty:

@@ -1,0 +1,12 @@
+# Consumer Behavior Drift Detection — Requirements
+# pip install -r requirements.txt
+
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+plotly>=5.18.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+streamlit>=1.32.0
+requests>=2.31.0
+reportlab>=4.0.0

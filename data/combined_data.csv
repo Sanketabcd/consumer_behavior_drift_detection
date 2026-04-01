@@ -1,0 +1,2001 @@
+Date,Customer_ID,Product_Category,Purchase_Amount,Payment_Method,Period
+2023-01-01,C1015,Home & Garden,146.74,Debit Card,Baseline
+2023-01-01,C4325,Home & Garden,49.04,Debit Card,Baseline
+2023-01-01,C2911,Electronics,18.09,Debit Card,Baseline
+2023-01-01,C2319,Groceries,110.59,Credit Card,Baseline
+2023-01-01,C3054,Clothing,19.0,Debit Card,Baseline
+2023-01-01,C1696,Groceries,64.45,Credit Card,Baseline
+2023-01-01,C3000,Books,52.91,Credit Card,Baseline
+2023-01-01,C4700,Clothing,27.99,Debit Card,Baseline
+2023-01-01,C2312,Clothing,66.97,Credit Card,Baseline
+2023-01-02,C2383,Electronics,82.31,Credit Card,Baseline
+2023-01-02,C3360,Home & Garden,81.24,Credit Card,Baseline
+2023-01-02,C3854,Electronics,292.88,Credit Card,Baseline
+2023-01-02,C2646,Groceries,30.98,Credit Card,Baseline
+2023-01-02,C3052,Electronics,48.91,Credit Card,Baseline
+2023-01-03,C2262,Clothing,35.26,Debit Card,Baseline
+2023-01-03,C4329,Home & Garden,33.13,Debit Card,Baseline
+2023-01-03,C1024,Groceries,671.96,Credit Card,Baseline
+2023-01-03,C4401,Electronics,109.43,Credit Card,Baseline
+2023-01-03,C4797,Electronics,78.11,Credit Card,Baseline
+2023-01-03,C3931,Clothing,273.09,Credit Card,Baseline
+2023-01-03,C2914,Clothing,52.65,Credit Card,Baseline
+2023-01-04,C4583,Electronics,37.49,Debit Card,Baseline
+2023-01-04,C2040,Clothing,184.09,Debit Card,Baseline
+2023-01-04,C1477,Electronics,67.61,Debit Card,Baseline
+2023-01-04,C2796,Electronics,45.39,Credit Card,Baseline
+2023-01-04,C4747,Clothing,84.93,Credit Card,Baseline
+2023-01-04,C1327,Electronics,32.25,PayPal,Baseline
+2023-01-05,C2591,Electronics,6.63,Credit Card,Baseline
+2023-01-05,C1938,Groceries,38.5,Credit Card,Baseline
+2023-01-05,C3599,Clothing,62.29,Credit Card,Baseline
+2023-01-05,C2865,Clothing,104.44,Debit Card,Baseline
+2023-01-05,C4042,Groceries,81.49,Debit Card,Baseline
+2023-01-05,C4155,Electronics,55.65,Credit Card,Baseline
+2023-01-05,C4332,Groceries,12.12,Cash,Baseline
+2023-01-06,C4675,Groceries,107.85,Debit Card,Baseline
+2023-01-06,C1686,Groceries,18.29,Credit Card,Baseline
+2023-01-06,C2245,Books,75.06,Credit Card,Baseline
+2023-01-06,C1884,Groceries,58.02,Debit Card,Baseline
+2023-01-06,C4195,Groceries,79.75,Debit Card,Baseline
+2023-01-06,C2304,Home & Garden,62.72,Credit Card,Baseline
+2023-01-07,C1147,Groceries,75.61,PayPal,Baseline
+2023-01-07,C3403,Clothing,21.08,Credit Card,Baseline
+2023-01-07,C2521,Books,40.06,Cash,Baseline
+2023-01-08,C2669,Clothing,64.75,Cash,Baseline
+2023-01-08,C3180,Home & Garden,46.41,Debit Card,Baseline
+2023-01-08,C2256,Books,63.93,Credit Card,Baseline
+2023-01-08,C4387,Electronics,19.95,Debit Card,Baseline
+2023-01-08,C4462,Groceries,39.35,PayPal,Baseline
+2023-01-08,C4186,Groceries,59.23,Debit Card,Baseline
+2023-01-08,C3308,Books,47.93,Debit Card,Baseline
+2023-01-08,C4760,Clothing,186.86,PayPal,Baseline
+2023-01-08,C3120,Clothing,114.13,PayPal,Baseline
+2023-01-09,C1083,Electronics,36.43,PayPal,Baseline
+2023-01-09,C3853,Clothing,55.43,PayPal,Baseline
+2023-01-09,C1989,Groceries,99.83,Credit Card,Baseline
+2023-01-09,C3930,Electronics,54.35,PayPal,Baseline
+2023-01-09,C1709,Groceries,82.93,Credit Card,Baseline
+2023-01-09,C1502,Groceries,42.63,Credit Card,Baseline
+2023-01-10,C3234,Groceries,65.38,Credit Card,Baseline
+2023-01-10,C1973,Clothing,61.31,Cash,Baseline
+2023-01-10,C3866,Home & Garden,25.4,Debit Card,Baseline
+2023-01-11,C4120,Books,63.8,PayPal,Baseline
+2023-01-11,C4415,Clothing,67.41,PayPal,Baseline
+2023-01-12,C4756,Books,150.29,PayPal,Baseline
+2023-01-12,C3737,Groceries,54.0,PayPal,Baseline
+2023-01-12,C1364,Clothing,265.38,Credit Card,Baseline
+2023-01-12,C3864,Books,22.9,Debit Card,Baseline
+2023-01-12,C1935,Clothing,23.15,Credit Card,Baseline
+2023-01-12,C1215,Clothing,39.39,Credit Card,Baseline
+2023-01-12,C4619,Books,11.29,Credit Card,Baseline
+2023-01-12,C1265,Groceries,208.25,PayPal,Baseline
+2023-01-13,C2040,Home & Garden,21.78,Credit Card,Baseline
+2023-01-13,C3896,Electronics,81.44,Debit Card,Baseline
+2023-01-13,C3076,Books,55.52,PayPal,Baseline
+2023-01-13,C1699,Groceries,102.64,Cash,Baseline
+2023-01-13,C1827,Clothing,198.83,PayPal,Baseline
+2023-01-13,C1745,Books,134.34,Credit Card,Baseline
+2023-01-14,C1317,Clothing,17.12,Cash,Baseline
+2023-01-14,C1425,Books,107.63,Credit Card,Baseline
+2023-01-14,C2574,Groceries,12.17,Debit Card,Baseline
+2023-01-14,C4054,Groceries,17.01,Credit Card,Baseline
+2023-01-14,C3597,Books,61.4,Credit Card,Baseline
+2023-01-15,C1735,Clothing,87.66,Credit Card,Baseline
+2023-01-15,C4068,Electronics,44.04,Credit Card,Baseline
+2023-01-15,C4391,Clothing,47.7,Debit Card,Baseline
+2023-01-15,C2863,Electronics,84.88,PayPal,Baseline
+2023-01-15,C1516,Electronics,62.48,Credit Card,Baseline
+2023-01-15,C2247,Home & Garden,21.97,PayPal,Baseline
+2023-01-15,C3070,Groceries,124.72,Credit Card,Baseline
+2023-01-16,C1609,Groceries,163.74,Credit Card,Baseline
+2023-01-16,C1920,Books,19.3,Debit Card,Baseline
+2023-01-16,C3723,Electronics,67.54,Debit Card,Baseline
+2023-01-17,C4695,Groceries,70.91,PayPal,Baseline
+2023-01-17,C1868,Books,260.69,PayPal,Baseline
+2023-01-17,C2418,Home & Garden,76.41,Credit Card,Baseline
+2023-01-17,C4310,Groceries,28.35,Debit Card,Baseline
+2023-01-17,C4886,Electronics,141.92,Debit Card,Baseline
+2023-01-17,C2136,Electronics,93.19,Debit Card,Baseline
+2023-01-18,C1992,Home & Garden,51.09,PayPal,Baseline
+2023-01-18,C2523,Groceries,33.31,Debit Card,Baseline
+2023-01-18,C2547,Books,111.91,Debit Card,Baseline
+2023-01-19,C4924,Clothing,66.5,Debit Card,Baseline
+2023-01-19,C1363,Books,61.23,Credit Card,Baseline
+2023-01-19,C4553,Clothing,15.98,Credit Card,Baseline
+2023-01-19,C2194,Books,94.34,Credit Card,Baseline
+2023-01-19,C3708,Books,170.36,Credit Card,Baseline
+2023-01-20,C2453,Groceries,100.03,Credit Card,Baseline
+2023-01-20,C1028,Electronics,25.96,Cash,Baseline
+2023-01-20,C1395,Clothing,88.46,Credit Card,Baseline
+2023-01-21,C2346,Clothing,83.74,Debit Card,Baseline
+2023-01-21,C2046,Clothing,38.73,Credit Card,Baseline
+2023-01-21,C4395,Clothing,55.28,Credit Card,Baseline
+2023-01-21,C1832,Groceries,28.28,PayPal,Baseline
+2023-01-21,C4569,Clothing,23.18,Debit Card,Baseline
+2023-01-21,C2920,Electronics,4.88,Credit Card,Baseline
+2023-01-21,C3621,Clothing,98.86,PayPal,Baseline
+2023-01-21,C2855,Books,26.0,Cash,Baseline
+2023-01-22,C2772,Home & Garden,186.19,Credit Card,Baseline
+2023-01-22,C3134,Groceries,74.73,Credit Card,Baseline
+2023-01-22,C4930,Clothing,24.26,Debit Card,Baseline
+2023-01-22,C2772,Electronics,44.84,PayPal,Baseline
+2023-01-23,C4088,Clothing,19.96,PayPal,Baseline
+2023-01-23,C4178,Clothing,111.03,Credit Card,Baseline
+2023-01-23,C1329,Books,93.04,Credit Card,Baseline
+2023-01-23,C4776,Clothing,19.4,Debit Card,Baseline
+2023-01-24,C2277,Groceries,24.79,Credit Card,Baseline
+2023-01-24,C3394,Clothing,53.33,Credit Card,Baseline
+2023-01-24,C1943,Groceries,88.32,Debit Card,Baseline
+2023-01-24,C2136,Books,38.5,Credit Card,Baseline
+2023-01-24,C4874,Clothing,67.51,Debit Card,Baseline
+2023-01-25,C4294,Electronics,174.98,Debit Card,Baseline
+2023-01-25,C2561,Clothing,88.71,Debit Card,Baseline
+2023-01-25,C1972,Groceries,77.2,Credit Card,Baseline
+2023-01-25,C1447,Electronics,58.39,Debit Card,Baseline
+2023-01-25,C1164,Electronics,42.4,Credit Card,Baseline
+2023-01-26,C2704,Books,444.36,Debit Card,Baseline
+2023-01-26,C2085,Groceries,45.26,Credit Card,Baseline
+2023-01-26,C3469,Electronics,131.26,PayPal,Baseline
+2023-01-26,C1988,Groceries,45.86,Credit Card,Baseline
+2023-01-26,C4717,Electronics,58.93,Credit Card,Baseline
+2023-01-26,C2920,Groceries,15.75,Credit Card,Baseline
+2023-01-27,C4782,Electronics,28.07,Credit Card,Baseline
+2023-01-27,C4420,Electronics,35.9,Debit Card,Baseline
+2023-01-27,C4205,Home & Garden,155.01,Credit Card,Baseline
+2023-01-27,C3419,Home & Garden,111.31,Credit Card,Baseline
+2023-01-27,C4079,Clothing,61.68,Cash,Baseline
+2023-01-27,C4533,Groceries,139.56,Credit Card,Baseline
+2023-01-28,C2858,Electronics,54.19,PayPal,Baseline
+2023-01-28,C1145,Groceries,18.89,Credit Card,Baseline
+2023-01-28,C1126,Home & Garden,38.51,Credit Card,Baseline
+2023-01-28,C2863,Electronics,54.88,PayPal,Baseline
+2023-01-28,C2223,Clothing,76.3,PayPal,Baseline
+2023-01-28,C4465,Home & Garden,9.05,Cash,Baseline
+2023-01-28,C1355,Clothing,68.31,PayPal,Baseline
+2023-01-28,C3094,Electronics,58.81,Credit Card,Baseline
+2023-01-28,C4117,Home & Garden,54.31,Credit Card,Baseline
+2023-01-29,C4005,Clothing,59.43,Credit Card,Baseline
+2023-01-29,C1401,Groceries,56.82,PayPal,Baseline
+2023-01-29,C3969,Groceries,275.74,Cash,Baseline
+2023-01-29,C1520,Books,594.79,Debit Card,Baseline
+2023-01-29,C4694,Books,28.65,Credit Card,Baseline
+2023-01-30,C2520,Clothing,31.75,Credit Card,Baseline
+2023-01-30,C2640,Books,18.95,Credit Card,Baseline
+2023-01-30,C2218,Home & Garden,58.48,Debit Card,Baseline
+2023-01-30,C2828,Groceries,49.15,Credit Card,Baseline
+2023-01-30,C1312,Electronics,133.86,Debit Card,Baseline
+2023-01-30,C4870,Electronics,44.39,PayPal,Baseline
+2023-01-31,C3257,Clothing,26.68,Credit Card,Baseline
+2023-02-01,C3054,Clothing,8.7,Debit Card,Baseline
+2023-02-01,C4118,Electronics,18.71,Credit Card,Baseline
+2023-02-01,C3987,Groceries,46.86,Credit Card,Baseline
+2023-02-02,C2845,Electronics,46.87,Credit Card,Baseline
+2023-02-02,C1405,Electronics,33.77,Credit Card,Baseline
+2023-02-02,C1483,Groceries,40.59,Credit Card,Baseline
+2023-02-02,C4228,Groceries,46.22,Debit Card,Baseline
+2023-02-02,C4482,Groceries,118.58,Debit Card,Baseline
+2023-02-02,C1709,Electronics,221.33,Debit Card,Baseline
+2023-02-02,C2481,Books,79.92,Debit Card,Baseline
+2023-02-02,C1830,Electronics,162.15,Credit Card,Baseline
+2023-02-03,C4239,Electronics,108.5,Credit Card,Baseline
+2023-02-03,C2394,Clothing,72.57,Debit Card,Baseline
+2023-02-03,C4526,Groceries,69.22,PayPal,Baseline
+2023-02-03,C4945,Books,290.51,Credit Card,Baseline
+2023-02-03,C1726,Home & Garden,95.04,Debit Card,Baseline
+2023-02-03,C1983,Electronics,22.09,PayPal,Baseline
+2023-02-04,C3438,Groceries,42.3,Cash,Baseline
+2023-02-04,C1153,Books,26.6,Credit Card,Baseline
+2023-02-04,C4354,Clothing,166.33,Credit Card,Baseline
+2023-02-04,C4125,Groceries,42.82,Credit Card,Baseline
+2023-02-04,C1398,Books,134.22,Debit Card,Baseline
+2023-02-05,C1699,Electronics,33.1,Credit Card,Baseline
+2023-02-05,C3913,Groceries,72.11,PayPal,Baseline
+2023-02-05,C4341,Groceries,25.57,PayPal,Baseline
+2023-02-05,C2639,Clothing,118.14,Credit Card,Baseline
+2023-02-05,C1470,Clothing,90.99,Debit Card,Baseline
+2023-02-05,C2121,Electronics,39.9,Credit Card,Baseline
+2023-02-06,C4115,Clothing,22.88,Credit Card,Baseline
+2023-02-06,C4489,Home & Garden,50.27,Debit Card,Baseline
+2023-02-06,C4342,Groceries,19.11,PayPal,Baseline
+2023-02-06,C2759,Clothing,77.13,PayPal,Baseline
+2023-02-06,C2955,Home & Garden,21.01,Debit Card,Baseline
+2023-02-07,C1417,Groceries,73.82,PayPal,Baseline
+2023-02-07,C1077,Clothing,156.32,Debit Card,Baseline
+2023-02-07,C1294,Clothing,151.4,Credit Card,Baseline
+2023-02-07,C1038,Groceries,129.72,Credit Card,Baseline
+2023-02-07,C2933,Electronics,28.21,PayPal,Baseline
+2023-02-07,C2976,Groceries,262.45,Debit Card,Baseline
+2023-02-07,C4547,Clothing,53.49,Debit Card,Baseline
+2023-02-08,C1081,Electronics,93.35,PayPal,Baseline
+2023-02-08,C1038,Home & Garden,13.18,PayPal,Baseline
+2023-02-08,C1129,Electronics,80.66,Credit Card,Baseline
+2023-02-08,C4990,Electronics,81.3,Debit Card,Baseline
+2023-02-08,C2690,Electronics,88.15,PayPal,Baseline
+2023-02-08,C3713,Electronics,135.24,Debit Card,Baseline
+2023-02-08,C2043,Books,29.57,PayPal,Baseline
+2023-02-08,C2934,Home & Garden,66.12,Credit Card,Baseline
+2023-02-09,C4044,Books,26.76,Debit Card,Baseline
+2023-02-09,C3353,Clothing,88.04,Cash,Baseline
+2023-02-10,C2857,Electronics,45.61,Credit Card,Baseline
+2023-02-10,C1292,Groceries,139.17,Credit Card,Baseline
+2023-02-10,C4228,Electronics,35.2,PayPal,Baseline
+2023-02-11,C2435,Groceries,63.59,Credit Card,Baseline
+2023-02-11,C4432,Clothing,116.52,Cash,Baseline
+2023-02-11,C4028,Books,76.5,Debit Card,Baseline
+2023-02-11,C1345,Groceries,22.81,Credit Card,Baseline
+2023-02-12,C2308,Groceries,125.37,Debit Card,Baseline
+2023-02-12,C3375,Groceries,26.18,Debit Card,Baseline
+2023-02-12,C4562,Electronics,39.42,Cash,Baseline
+2023-02-13,C4999,Groceries,42.88,Debit Card,Baseline
+2023-02-13,C4920,Books,94.54,Debit Card,Baseline
+2023-02-13,C1359,Groceries,78.71,PayPal,Baseline
+2023-02-13,C4056,Electronics,50.87,Credit Card,Baseline
+2023-02-13,C1419,Books,111.72,PayPal,Baseline
+2023-02-13,C1250,Groceries,25.25,Credit Card,Baseline
+2023-02-14,C3235,Groceries,27.38,Credit Card,Baseline
+2023-02-14,C2658,Electronics,77.75,Debit Card,Baseline
+2023-02-14,C3618,Electronics,17.14,Debit Card,Baseline
+2023-02-14,C4204,Groceries,37.37,Debit Card,Baseline
+2023-02-15,C3383,Clothing,91.92,Debit Card,Baseline
+2023-02-15,C2111,Books,7.76,Credit Card,Baseline
+2023-02-15,C3632,Clothing,51.95,Debit Card,Baseline
+2023-02-15,C4122,Electronics,67.36,Credit Card,Baseline
+2023-02-15,C1481,Books,199.09,Credit Card,Baseline
+2023-02-16,C1515,Books,44.91,PayPal,Baseline
+2023-02-16,C1159,Groceries,43.68,Debit Card,Baseline
+2023-02-16,C4487,Books,29.76,Debit Card,Baseline
+2023-02-16,C1963,Groceries,53.58,Debit Card,Baseline
+2023-02-16,C3808,Groceries,37.87,Debit Card,Baseline
+2023-02-16,C3828,Clothing,22.43,Debit Card,Baseline
+2023-02-16,C2301,Clothing,15.17,Debit Card,Baseline
+2023-02-16,C4547,Electronics,63.55,Debit Card,Baseline
+2023-02-16,C3032,Home & Garden,32.46,Debit Card,Baseline
+2023-02-17,C1094,Clothing,76.84,PayPal,Baseline
+2023-02-17,C4335,Home & Garden,63.25,Credit Card,Baseline
+2023-02-17,C1355,Clothing,74.54,PayPal,Baseline
+2023-02-17,C4358,Clothing,54.9,Credit Card,Baseline
+2023-02-17,C2120,Books,111.88,Credit Card,Baseline
+2023-02-17,C3490,Books,105.64,Credit Card,Baseline
+2023-02-17,C4962,Electronics,72.32,Credit Card,Baseline
+2023-02-17,C1326,Electronics,82.51,Credit Card,Baseline
+2023-02-18,C1476,Electronics,51.07,Debit Card,Baseline
+2023-02-18,C4328,Electronics,30.14,Debit Card,Baseline
+2023-02-18,C3679,Groceries,96.98,Debit Card,Baseline
+2023-02-18,C3136,Clothing,310.06,Credit Card,Baseline
+2023-02-18,C3808,Home & Garden,18.6,Debit Card,Baseline
+2023-02-19,C2471,Electronics,55.54,PayPal,Baseline
+2023-02-19,C3756,Electronics,73.78,PayPal,Baseline
+2023-02-19,C3466,Electronics,11.75,Debit Card,Baseline
+2023-02-19,C2380,Home & Garden,577.83,PayPal,Baseline
+2023-02-20,C3785,Clothing,45.43,Credit Card,Baseline
+2023-02-20,C2201,Electronics,31.32,Credit Card,Baseline
+2023-02-20,C2523,Groceries,102.28,Cash,Baseline
+2023-02-20,C3162,Electronics,74.57,Debit Card,Baseline
+2023-02-20,C1615,Clothing,211.88,Credit Card,Baseline
+2023-02-20,C3469,Books,33.47,PayPal,Baseline
+2023-02-20,C4845,Electronics,69.62,Debit Card,Baseline
+2023-02-20,C4476,Books,325.4,Debit Card,Baseline
+2023-02-21,C3188,Electronics,101.87,Credit Card,Baseline
+2023-02-21,C1987,Clothing,44.52,Cash,Baseline
+2023-02-21,C1284,Groceries,58.65,Debit Card,Baseline
+2023-02-21,C3418,Electronics,99.32,Credit Card,Baseline
+2023-02-21,C3513,Electronics,91.87,Debit Card,Baseline
+2023-02-21,C3713,Electronics,47.43,Cash,Baseline
+2023-02-22,C1974,Home & Garden,26.02,Credit Card,Baseline
+2023-02-22,C1777,Books,111.07,Credit Card,Baseline
+2023-02-22,C4280,Books,188.52,Credit Card,Baseline
+2023-02-22,C4236,Clothing,163.85,Credit Card,Baseline
+2023-02-22,C3336,Clothing,46.11,PayPal,Baseline
+2023-02-22,C1225,Books,29.65,Debit Card,Baseline
+2023-02-22,C2625,Electronics,59.05,Credit Card,Baseline
+2023-02-22,C1820,Clothing,70.48,Credit Card,Baseline
+2023-02-23,C2136,Electronics,10.99,PayPal,Baseline
+2023-02-23,C4511,Groceries,30.65,Debit Card,Baseline
+2023-02-23,C4737,Books,50.16,Debit Card,Baseline
+2023-02-23,C2312,Electronics,12.9,Credit Card,Baseline
+2023-02-23,C3768,Books,41.13,Debit Card,Baseline
+2023-02-23,C3079,Groceries,47.92,Credit Card,Baseline
+2023-02-23,C2254,Clothing,82.02,Credit Card,Baseline
+2023-02-23,C1181,Groceries,89.35,Credit Card,Baseline
+2023-02-23,C1849,Clothing,31.44,PayPal,Baseline
+2023-02-24,C3541,Electronics,50.27,Debit Card,Baseline
+2023-02-24,C3847,Electronics,63.8,Debit Card,Baseline
+2023-02-24,C2333,Home & Garden,79.65,PayPal,Baseline
+2023-02-24,C1021,Electronics,62.64,Credit Card,Baseline
+2023-02-25,C4998,Groceries,89.64,Debit Card,Baseline
+2023-02-25,C3604,Books,121.21,PayPal,Baseline
+2023-02-25,C3582,Clothing,57.19,Cash,Baseline
+2023-02-25,C4521,Books,133.48,Cash,Baseline
+2023-02-25,C3041,Groceries,40.62,Credit Card,Baseline
+2023-02-26,C1400,Electronics,65.63,Debit Card,Baseline
+2023-02-26,C1706,Electronics,26.56,Cash,Baseline
+2023-02-26,C4216,Groceries,173.28,PayPal,Baseline
+2023-02-27,C3516,Books,143.04,Credit Card,Baseline
+2023-02-27,C2379,Clothing,135.93,PayPal,Baseline
+2023-02-27,C2639,Electronics,38.99,PayPal,Baseline
+2023-02-27,C2372,Groceries,132.97,Debit Card,Baseline
+2023-02-27,C1587,Electronics,42.27,PayPal,Baseline
+2023-02-27,C1600,Groceries,15.16,Credit Card,Baseline
+2023-02-27,C3461,Clothing,67.24,Debit Card,Baseline
+2023-02-27,C3761,Home & Garden,133.15,PayPal,Baseline
+2023-02-27,C1592,Groceries,21.23,Debit Card,Baseline
+2023-02-28,C3449,Clothing,47.43,PayPal,Baseline
+2023-02-28,C3467,Electronics,12.92,Debit Card,Baseline
+2023-02-28,C4224,Clothing,26.23,Debit Card,Baseline
+2023-02-28,C2219,Books,32.41,Debit Card,Baseline
+2023-03-01,C3573,Home & Garden,20.26,Credit Card,Baseline
+2023-03-01,C3033,Clothing,71.7,PayPal,Baseline
+2023-03-01,C2248,Groceries,58.32,Credit Card,Baseline
+2023-03-01,C4070,Electronics,21.08,Cash,Baseline
+2023-03-01,C2086,Clothing,108.84,Credit Card,Baseline
+2023-03-02,C1920,Groceries,186.23,Credit Card,Baseline
+2023-03-02,C1317,Groceries,12.13,Credit Card,Baseline
+2023-03-02,C3087,Groceries,114.37,Credit Card,Baseline
+2023-03-02,C2297,Groceries,56.05,Cash,Baseline
+2023-03-02,C1190,Home & Garden,52.33,Cash,Baseline
+2023-03-02,C3006,Clothing,61.82,Credit Card,Baseline
+2023-03-03,C3448,Clothing,32.26,Cash,Baseline
+2023-03-03,C3081,Home & Garden,28.54,Debit Card,Baseline
+2023-03-03,C3802,Clothing,225.94,PayPal,Baseline
+2023-03-03,C3935,Clothing,53.97,Credit Card,Baseline
+2023-03-03,C3861,Clothing,61.21,Cash,Baseline
+2023-03-03,C1566,Electronics,11.21,PayPal,Baseline
+2023-03-03,C2341,Electronics,37.66,PayPal,Baseline
+2023-03-03,C4963,Clothing,146.16,Cash,Baseline
+2023-03-03,C1028,Electronics,11.36,Credit Card,Baseline
+2023-03-04,C2193,Electronics,73.53,Credit Card,Baseline
+2023-03-04,C3275,Clothing,68.7,PayPal,Baseline
+2023-03-04,C1988,Home & Garden,110.85,PayPal,Baseline
+2023-03-04,C3901,Groceries,44.24,Credit Card,Baseline
+2023-03-04,C2868,Books,29.17,Debit Card,Baseline
+2023-03-04,C3175,Groceries,22.44,Debit Card,Baseline
+2023-03-04,C3443,Home & Garden,45.97,Credit Card,Baseline
+2023-03-05,C4560,Home & Garden,171.59,Credit Card,Baseline
+2023-03-05,C1277,Electronics,27.71,Debit Card,Baseline
+2023-03-05,C4762,Groceries,30.15,Cash,Baseline
+2023-03-06,C4675,Electronics,90.05,Credit Card,Baseline
+2023-03-06,C2182,Electronics,35.84,Debit Card,Baseline
+2023-03-06,C4219,Clothing,20.72,Credit Card,Baseline
+2023-03-06,C2865,Books,22.82,Credit Card,Baseline
+2023-03-06,C2463,Clothing,19.42,PayPal,Baseline
+2023-03-06,C2555,Electronics,35.33,Debit Card,Baseline
+2023-03-07,C4055,Home & Garden,28.57,PayPal,Baseline
+2023-03-07,C1892,Home & Garden,86.18,Credit Card,Baseline
+2023-03-07,C2076,Clothing,7.03,Debit Card,Baseline
+2023-03-07,C1284,Clothing,107.61,Credit Card,Baseline
+2023-03-08,C1750,Groceries,111.51,PayPal,Baseline
+2023-03-08,C1674,Clothing,27.42,Debit Card,Baseline
+2023-03-08,C1909,Electronics,48.83,Debit Card,Baseline
+2023-03-08,C4983,Groceries,58.61,Credit Card,Baseline
+2023-03-09,C4974,Groceries,41.49,Credit Card,Baseline
+2023-03-09,C4609,Electronics,79.47,Credit Card,Baseline
+2023-03-09,C3903,Books,168.74,Debit Card,Baseline
+2023-03-09,C1946,Books,68.16,Debit Card,Baseline
+2023-03-10,C3058,Groceries,38.03,Credit Card,Baseline
+2023-03-10,C1569,Clothing,37.03,Debit Card,Baseline
+2023-03-10,C1692,Clothing,79.67,Credit Card,Baseline
+2023-03-10,C4600,Books,134.4,PayPal,Baseline
+2023-03-10,C3315,Clothing,9.3,PayPal,Baseline
+2023-03-10,C4297,Clothing,282.94,Credit Card,Baseline
+2023-03-10,C4028,Books,18.35,Credit Card,Baseline
+2023-03-10,C4993,Electronics,66.7,Cash,Baseline
+2023-03-11,C1127,Electronics,93.53,Credit Card,Baseline
+2023-03-11,C1130,Electronics,127.48,Debit Card,Baseline
+2023-03-11,C2772,Groceries,26.04,Credit Card,Baseline
+2023-03-11,C2205,Groceries,163.95,Credit Card,Baseline
+2023-03-11,C3506,Clothing,98.05,Debit Card,Baseline
+2023-03-11,C1730,Books,112.37,Credit Card,Baseline
+2023-03-12,C3667,Clothing,37.22,PayPal,Baseline
+2023-03-12,C4531,Groceries,33.99,Credit Card,Baseline
+2023-03-12,C2141,Home & Garden,50.46,Credit Card,Baseline
+2023-03-13,C4170,Books,268.81,Debit Card,Baseline
+2023-03-13,C3891,Clothing,24.0,Debit Card,Baseline
+2023-03-13,C4643,Electronics,138.31,PayPal,Baseline
+2023-03-14,C3350,Clothing,60.27,Debit Card,Baseline
+2023-03-14,C1574,Electronics,31.38,Credit Card,Baseline
+2023-03-14,C3863,Clothing,52.45,Credit Card,Baseline
+2023-03-15,C4315,Clothing,25.45,Credit Card,Baseline
+2023-03-15,C4332,Groceries,80.33,Debit Card,Baseline
+2023-03-15,C3973,Electronics,159.55,Credit Card,Baseline
+2023-03-15,C3735,Electronics,93.22,Credit Card,Baseline
+2023-03-16,C4449,Clothing,196.16,Debit Card,Baseline
+2023-03-16,C1628,Books,101.81,Debit Card,Baseline
+2023-03-16,C1917,Books,124.52,Debit Card,Baseline
+2023-03-16,C1715,Books,20.37,Credit Card,Baseline
+2023-03-16,C3030,Electronics,118.46,Cash,Baseline
+2023-03-16,C4850,Books,81.52,Debit Card,Baseline
+2023-03-16,C2500,Books,42.68,Debit Card,Baseline
+2023-03-16,C1024,Books,64.02,Credit Card,Baseline
+2023-03-17,C1136,Clothing,208.43,Credit Card,Baseline
+2023-03-17,C4023,Electronics,28.1,Credit Card,Baseline
+2023-03-17,C3868,Books,44.11,PayPal,Baseline
+2023-03-17,C4056,Books,71.8,PayPal,Baseline
+2023-03-18,C2098,Books,130.68,Cash,Baseline
+2023-03-19,C3553,Clothing,361.8,Cash,Baseline
+2023-03-19,C4598,Electronics,85.65,Debit Card,Baseline
+2023-03-19,C3719,Electronics,33.6,Credit Card,Baseline
+2023-03-19,C3400,Electronics,56.29,PayPal,Baseline
+2023-03-20,C4720,Electronics,70.97,Credit Card,Baseline
+2023-03-20,C1762,Home & Garden,90.06,Debit Card,Baseline
+2023-03-20,C1906,Electronics,72.22,Credit Card,Baseline
+2023-03-20,C1951,Clothing,80.28,PayPal,Baseline
+2023-03-21,C2625,Home & Garden,113.84,Cash,Baseline
+2023-03-21,C4810,Books,26.07,PayPal,Baseline
+2023-03-21,C1186,Clothing,51.78,Credit Card,Baseline
+2023-03-22,C4738,Books,145.31,Credit Card,Baseline
+2023-03-22,C2202,Groceries,28.88,Debit Card,Baseline
+2023-03-22,C1201,Home & Garden,261.56,Debit Card,Baseline
+2023-03-22,C4521,Electronics,18.84,Debit Card,Baseline
+2023-03-22,C2355,Clothing,27.63,Credit Card,Baseline
+2023-03-22,C3263,Groceries,72.91,Debit Card,Baseline
+2023-03-23,C3203,Home & Garden,87.78,Credit Card,Baseline
+2023-03-23,C2290,Electronics,18.53,Debit Card,Baseline
+2023-03-23,C4960,Groceries,85.77,Debit Card,Baseline
+2023-03-23,C4482,Clothing,9.76,Credit Card,Baseline
+2023-03-23,C1987,Home & Garden,44.19,Debit Card,Baseline
+2023-03-24,C4902,Electronics,128.67,Debit Card,Baseline
+2023-03-24,C1614,Electronics,95.49,Debit Card,Baseline
+2023-03-24,C3265,Groceries,94.32,PayPal,Baseline
+2023-03-24,C2112,Electronics,16.4,Credit Card,Baseline
+2023-03-25,C2333,Groceries,32.52,Credit Card,Baseline
+2023-03-25,C1603,Electronics,40.61,PayPal,Baseline
+2023-03-25,C4663,Home & Garden,79.02,PayPal,Baseline
+2023-03-25,C3065,Clothing,92.52,Cash,Baseline
+2023-03-25,C1954,Electronics,88.72,Debit Card,Baseline
+2023-03-25,C4511,Books,10.18,PayPal,Baseline
+2023-03-25,C3151,Electronics,12.18,Credit Card,Baseline
+2023-03-26,C1010,Books,69.09,Credit Card,Baseline
+2023-03-26,C3800,Electronics,128.82,Credit Card,Baseline
+2023-03-26,C2599,Clothing,32.68,Cash,Baseline
+2023-03-26,C1780,Books,102.75,PayPal,Baseline
+2023-03-27,C1338,Groceries,44.65,Credit Card,Baseline
+2023-03-27,C2256,Electronics,30.35,PayPal,Baseline
+2023-03-27,C4051,Electronics,53.46,Debit Card,Baseline
+2023-03-27,C4472,Clothing,79.02,Credit Card,Baseline
+2023-03-27,C4223,Clothing,9.75,Debit Card,Baseline
+2023-03-27,C4229,Electronics,96.77,PayPal,Baseline
+2023-03-27,C2890,Home & Garden,376.19,Debit Card,Baseline
+2023-03-27,C3273,Clothing,31.42,Debit Card,Baseline
+2023-03-27,C1774,Clothing,20.56,PayPal,Baseline
+2023-03-28,C1936,Clothing,452.81,PayPal,Baseline
+2023-03-29,C2932,Electronics,96.21,Credit Card,Baseline
+2023-03-29,C1872,Books,63.54,Credit Card,Baseline
+2023-03-29,C3898,Electronics,117.01,Debit Card,Baseline
+2023-03-30,C1645,Electronics,46.9,Credit Card,Baseline
+2023-03-30,C2065,Books,27.81,PayPal,Baseline
+2023-03-30,C3192,Clothing,100.29,Cash,Baseline
+2023-03-30,C3912,Electronics,168.81,Debit Card,Baseline
+2023-03-31,C1341,Books,18.11,Debit Card,Baseline
+2023-03-31,C1814,Groceries,134.47,Debit Card,Baseline
+2023-03-31,C2040,Books,17.1,PayPal,Baseline
+2023-03-31,C4170,Groceries,49.03,Credit Card,Baseline
+2023-03-31,C2524,Clothing,46.93,PayPal,Baseline
+2023-03-31,C1040,Groceries,193.34,Credit Card,Baseline
+2023-03-31,C4572,Groceries,68.61,Credit Card,Baseline
+2023-03-31,C4030,Books,40.63,PayPal,Baseline
+2023-03-31,C1375,Books,67.84,Debit Card,Baseline
+2023-03-31,C2997,Electronics,29.91,Credit Card,Baseline
+2023-03-31,C4218,Books,24.61,Debit Card,Baseline
+2023-04-01,C4394,Books,84.59,Debit Card,Baseline
+2023-04-01,C1182,Books,67.29,Debit Card,Baseline
+2023-04-02,C2013,Books,43.1,Credit Card,Baseline
+2023-04-02,C4111,Home & Garden,54.75,PayPal,Baseline
+2023-04-02,C2449,Electronics,35.21,Credit Card,Baseline
+2023-04-02,C3089,Clothing,81.34,PayPal,Baseline
+2023-04-02,C4500,Electronics,26.21,Debit Card,Baseline
+2023-04-02,C3736,Electronics,33.63,Debit Card,Baseline
+2023-04-02,C4110,Clothing,59.86,Credit Card,Baseline
+2023-04-02,C1904,Clothing,45.47,PayPal,Baseline
+2023-04-03,C3760,Electronics,49.3,Credit Card,Baseline
+2023-04-03,C1663,Books,9.89,Credit Card,Baseline
+2023-04-03,C4111,Books,123.61,Credit Card,Baseline
+2023-04-03,C2319,Books,50.22,Debit Card,Baseline
+2023-04-03,C4246,Groceries,29.51,Credit Card,Baseline
+2023-04-03,C3143,Electronics,34.25,Credit Card,Baseline
+2023-04-03,C3040,Groceries,17.48,Debit Card,Baseline
+2023-04-04,C2781,Books,179.81,PayPal,Baseline
+2023-04-04,C4416,Books,68.34,Credit Card,Baseline
+2023-04-04,C2410,Electronics,122.63,Debit Card,Baseline
+2023-04-04,C3507,Clothing,35.48,Debit Card,Baseline
+2023-04-04,C1701,Clothing,32.15,Debit Card,Baseline
+2023-04-04,C4977,Electronics,108.16,Credit Card,Baseline
+2023-04-04,C3571,Clothing,82.16,PayPal,Baseline
+2023-04-05,C1913,Groceries,20.15,Debit Card,Baseline
+2023-04-05,C2530,Electronics,159.68,Debit Card,Baseline
+2023-04-05,C1885,Groceries,22.79,Credit Card,Baseline
+2023-04-05,C2544,Clothing,216.05,Credit Card,Baseline
+2023-04-05,C4512,Clothing,198.3,PayPal,Baseline
+2023-04-05,C4314,Clothing,98.9,PayPal,Baseline
+2023-04-05,C4149,Electronics,49.04,Debit Card,Baseline
+2023-04-05,C3026,Clothing,15.62,Cash,Baseline
+2023-04-06,C3872,Electronics,33.23,Cash,Baseline
+2023-04-06,C1341,Books,15.09,Debit Card,Baseline
+2023-04-06,C3224,Clothing,85.16,Cash,Baseline
+2023-04-06,C3265,Electronics,42.67,Credit Card,Baseline
+2023-04-06,C4687,Home & Garden,155.75,PayPal,Baseline
+2023-04-06,C4850,Electronics,88.55,Credit Card,Baseline
+2023-04-06,C3571,Clothing,36.97,Credit Card,Baseline
+2023-04-06,C1592,Clothing,18.14,Credit Card,Baseline
+2023-04-07,C3806,Groceries,54.61,Debit Card,Baseline
+2023-04-07,C1762,Groceries,32.36,Debit Card,Baseline
+2023-04-08,C2594,Electronics,94.22,Credit Card,Baseline
+2023-04-08,C1938,Groceries,13.22,PayPal,Baseline
+2023-04-08,C4297,Clothing,24.64,Credit Card,Baseline
+2023-04-08,C4681,Electronics,147.78,Credit Card,Baseline
+2023-04-09,C1488,Home & Garden,269.49,Cash,Baseline
+2023-04-09,C3637,Groceries,15.09,PayPal,Baseline
+2023-04-09,C4363,Electronics,113.9,Credit Card,Baseline
+2023-04-09,C4640,Clothing,79.05,Credit Card,Baseline
+2023-04-09,C4054,Clothing,48.92,PayPal,Baseline
+2023-04-09,C3262,Clothing,141.33,Credit Card,Baseline
+2023-04-09,C4731,Groceries,34.33,Debit Card,Baseline
+2023-04-09,C3862,Groceries,105.04,PayPal,Baseline
+2023-04-09,C1556,Clothing,51.89,Cash,Baseline
+2023-04-09,C1101,Clothing,51.15,PayPal,Baseline
+2023-04-09,C1688,Clothing,29.42,Credit Card,Baseline
+2023-04-09,C2311,Books,170.41,Credit Card,Baseline
+2023-04-09,C4306,Groceries,28.14,Credit Card,Baseline
+2023-04-10,C2750,Groceries,119.47,PayPal,Baseline
+2023-04-10,C4363,Clothing,178.98,Credit Card,Baseline
+2023-04-10,C3317,Electronics,6.28,Credit Card,Baseline
+2023-04-10,C3204,Clothing,74.4,Debit Card,Baseline
+2023-04-10,C4067,Electronics,231.25,Debit Card,Baseline
+2023-04-11,C1020,Groceries,33.99,Debit Card,Baseline
+2023-04-11,C4953,Clothing,34.51,Debit Card,Baseline
+2023-04-11,C3382,Groceries,23.9,Credit Card,Baseline
+2023-04-11,C2332,Electronics,43.43,Cash,Baseline
+2023-04-11,C3116,Groceries,44.7,Credit Card,Baseline
+2023-04-11,C2981,Books,126.2,PayPal,Baseline
+2023-04-11,C2386,Home & Garden,97.11,Credit Card,Baseline
+2023-04-11,C1171,Electronics,13.16,Debit Card,Baseline
+2023-04-11,C2785,Home & Garden,102.77,Debit Card,Baseline
+2023-04-12,C4430,Electronics,106.04,Debit Card,Baseline
+2023-04-12,C2389,Books,20.28,Credit Card,Baseline
+2023-04-13,C3376,Electronics,33.46,Credit Card,Baseline
+2023-04-13,C2372,Books,66.07,Debit Card,Baseline
+2023-04-13,C3826,Electronics,15.54,Credit Card,Baseline
+2023-04-13,C3597,Groceries,13.48,Debit Card,Baseline
+2023-04-13,C2570,Groceries,116.77,Credit Card,Baseline
+2023-04-13,C1236,Electronics,56.87,PayPal,Baseline
+2023-04-14,C4020,Electronics,42.66,Debit Card,Baseline
+2023-04-14,C4452,Clothing,69.43,Credit Card,Baseline
+2023-04-14,C4953,Clothing,5.19,PayPal,Baseline
+2023-04-14,C4571,Electronics,249.87,Credit Card,Baseline
+2023-04-14,C3782,Electronics,38.09,Debit Card,Baseline
+2023-04-14,C2834,Groceries,31.93,PayPal,Baseline
+2023-04-14,C4090,Clothing,28.4,Debit Card,Baseline
+2023-04-14,C2851,Electronics,93.91,Cash,Baseline
+2023-04-15,C3769,Clothing,13.93,Credit Card,Baseline
+2023-04-15,C1060,Electronics,73.03,Debit Card,Baseline
+2023-04-15,C2607,Electronics,179.43,Debit Card,Baseline
+2023-04-15,C4894,Groceries,13.73,Debit Card,Baseline
+2023-04-16,C3035,Home & Garden,15.37,Credit Card,Baseline
+2023-04-16,C4798,Clothing,33.35,Debit Card,Baseline
+2023-04-16,C1920,Electronics,9.25,Cash,Baseline
+2023-04-17,C2716,Books,222.94,Cash,Baseline
+2023-04-17,C3965,Home & Garden,57.75,PayPal,Baseline
+2023-04-17,C3012,Groceries,9.35,Credit Card,Baseline
+2023-04-18,C1520,Electronics,16.88,Credit Card,Baseline
+2023-04-18,C3983,Groceries,18.31,Credit Card,Baseline
+2023-04-18,C4177,Clothing,50.01,Credit Card,Baseline
+2023-04-18,C4597,Groceries,33.18,PayPal,Baseline
+2023-04-19,C2007,Home & Garden,167.79,Debit Card,Baseline
+2023-04-19,C3108,Groceries,105.72,Credit Card,Baseline
+2023-04-19,C4597,Home & Garden,80.93,Debit Card,Baseline
+2023-04-19,C4430,Home & Garden,66.36,Debit Card,Baseline
+2023-04-19,C3963,Books,22.83,Credit Card,Baseline
+2023-04-19,C4508,Electronics,142.6,Credit Card,Baseline
+2023-04-19,C2817,Groceries,93.01,Credit Card,Baseline
+2023-04-19,C2823,Electronics,13.26,Cash,Baseline
+2023-04-20,C3306,Clothing,29.11,Credit Card,Baseline
+2023-04-20,C3549,Groceries,46.76,Debit Card,Baseline
+2023-04-21,C3514,Home & Garden,38.3,Credit Card,Baseline
+2023-04-21,C4972,Groceries,43.12,Credit Card,Baseline
+2023-04-21,C1950,Books,30.71,Debit Card,Baseline
+2023-04-21,C2291,Groceries,126.67,Credit Card,Baseline
+2023-04-21,C3007,Home & Garden,42.0,Credit Card,Baseline
+2023-04-21,C1585,Electronics,79.09,Debit Card,Baseline
+2023-04-21,C3461,Groceries,37.2,Debit Card,Baseline
+2023-04-21,C2970,Electronics,48.03,Credit Card,Baseline
+2023-04-21,C4789,Clothing,47.11,Cash,Baseline
+2023-04-22,C1002,Electronics,104.64,Debit Card,Baseline
+2023-04-22,C1768,Clothing,115.59,PayPal,Baseline
+2023-04-22,C3523,Books,33.07,Cash,Baseline
+2023-04-22,C3239,Clothing,26.41,Debit Card,Baseline
+2023-04-22,C1215,Clothing,102.18,Credit Card,Baseline
+2023-04-23,C3428,Groceries,67.25,Cash,Baseline
+2023-04-23,C4004,Books,94.02,Debit Card,Baseline
+2023-04-23,C2724,Books,117.04,Credit Card,Baseline
+2023-04-23,C1737,Home & Garden,89.12,Cash,Baseline
+2023-04-23,C2131,Electronics,62.05,Credit Card,Baseline
+2023-04-23,C1011,Books,24.9,Credit Card,Baseline
+2023-04-23,C1285,Clothing,12.0,Debit Card,Baseline
+2023-04-23,C1993,Electronics,212.72,Credit Card,Baseline
+2023-04-23,C2854,Home & Garden,37.42,Credit Card,Baseline
+2023-04-23,C4016,Electronics,7.21,Debit Card,Baseline
+2023-04-23,C4818,Clothing,28.79,Debit Card,Baseline
+2023-04-23,C4208,Home & Garden,131.73,Debit Card,Baseline
+2023-04-23,C1053,Clothing,174.62,Credit Card,Baseline
+2023-04-23,C4507,Electronics,20.42,Credit Card,Baseline
+2023-04-24,C4180,Groceries,65.66,Cash,Baseline
+2023-04-24,C3001,Groceries,17.2,Credit Card,Baseline
+2023-04-24,C3089,Home & Garden,6.8,Credit Card,Baseline
+2023-04-25,C4415,Clothing,24.15,Credit Card,Baseline
+2023-04-25,C2985,Books,91.95,PayPal,Baseline
+2023-04-25,C2240,Clothing,20.05,Credit Card,Baseline
+2023-04-25,C2279,Books,98.76,Cash,Baseline
+2023-04-25,C3209,Clothing,127.51,Debit Card,Baseline
+2023-04-25,C2274,Electronics,39.1,Debit Card,Baseline
+2023-04-25,C3129,Books,32.84,Credit Card,Baseline
+2023-04-26,C3687,Electronics,52.4,Credit Card,Baseline
+2023-04-26,C1428,Clothing,28.96,Credit Card,Baseline
+2023-04-26,C4191,Clothing,114.55,Cash,Baseline
+2023-04-26,C4368,Electronics,50.11,Cash,Baseline
+2023-04-26,C4272,Clothing,45.67,Credit Card,Baseline
+2023-04-27,C3624,Home & Garden,105.11,Credit Card,Baseline
+2023-04-27,C1730,Clothing,41.02,Cash,Baseline
+2023-04-27,C3981,Clothing,24.24,PayPal,Baseline
+2023-04-27,C2252,Groceries,121.61,Debit Card,Baseline
+2023-04-27,C4241,Books,18.9,Debit Card,Baseline
+2023-04-27,C4233,Electronics,27.01,Credit Card,Baseline
+2023-04-27,C1271,Groceries,57.71,Credit Card,Baseline
+2023-04-27,C4642,Electronics,40.16,Credit Card,Baseline
+2023-04-27,C4680,Electronics,63.74,Credit Card,Baseline
+2023-04-28,C2596,Clothing,40.06,Debit Card,Baseline
+2023-04-28,C2771,Electronics,62.89,Debit Card,Baseline
+2023-04-28,C2205,Electronics,35.37,Debit Card,Baseline
+2023-04-28,C4896,Books,275.58,Credit Card,Baseline
+2023-04-28,C2914,Electronics,111.29,Credit Card,Baseline
+2023-04-28,C1947,Electronics,86.98,Credit Card,Baseline
+2023-04-28,C1806,Books,164.87,Debit Card,Baseline
+2023-04-28,C3006,Electronics,70.31,Credit Card,Baseline
+2023-04-28,C1453,Clothing,57.05,Cash,Baseline
+2023-04-29,C2548,Electronics,46.47,Debit Card,Baseline
+2023-04-29,C4451,Books,15.1,Cash,Baseline
+2023-04-29,C4451,Groceries,496.57,Debit Card,Baseline
+2023-04-30,C4217,Home & Garden,85.3,Debit Card,Baseline
+2023-04-30,C2980,Groceries,267.64,Credit Card,Baseline
+2023-04-30,C3717,Groceries,30.09,Cash,Baseline
+2023-04-30,C4874,Clothing,75.45,Credit Card,Baseline
+2023-05-01,C4367,Groceries,73.38,Debit Card,Baseline
+2023-05-01,C1362,Electronics,176.15,PayPal,Baseline
+2023-05-01,C4100,Electronics,41.8,Credit Card,Baseline
+2023-05-01,C2887,Clothing,29.14,PayPal,Baseline
+2023-05-02,C1934,Groceries,86.5,Cash,Baseline
+2023-05-02,C3396,Clothing,243.9,Debit Card,Baseline
+2023-05-02,C1390,Electronics,34.93,Cash,Baseline
+2023-05-02,C2622,Books,61.65,Debit Card,Baseline
+2023-05-02,C4911,Books,119.12,Debit Card,Baseline
+2023-05-02,C3050,Clothing,22.24,Cash,Baseline
+2023-05-03,C4561,Electronics,55.72,Credit Card,Baseline
+2023-05-03,C4359,Clothing,83.73,PayPal,Baseline
+2023-05-03,C4281,Home & Garden,89.77,Credit Card,Baseline
+2023-05-03,C4719,Electronics,49.26,PayPal,Baseline
+2023-05-04,C3645,Groceries,58.06,Debit Card,Baseline
+2023-05-04,C3657,Electronics,19.92,Cash,Baseline
+2023-05-04,C2202,Clothing,33.9,Cash,Baseline
+2023-05-04,C1757,Clothing,169.98,Credit Card,Baseline
+2023-05-04,C3349,Electronics,39.3,Debit Card,Baseline
+2023-05-04,C2287,Books,74.62,Credit Card,Baseline
+2023-05-05,C2387,Clothing,55.59,Credit Card,Baseline
+2023-05-06,C3074,Books,63.29,Credit Card,Baseline
+2023-05-06,C4598,Electronics,75.71,Credit Card,Baseline
+2023-05-06,C1886,Electronics,89.81,Debit Card,Baseline
+2023-05-06,C1037,Electronics,85.15,Debit Card,Baseline
+2023-05-06,C4587,Books,16.15,Credit Card,Baseline
+2023-05-06,C3291,Groceries,79.37,Debit Card,Baseline
+2023-05-06,C3064,Books,58.3,Debit Card,Baseline
+2023-05-07,C2054,Books,52.76,PayPal,Baseline
+2023-05-07,C2700,Home & Garden,45.28,Debit Card,Baseline
+2023-05-07,C4468,Electronics,35.56,Credit Card,Baseline
+2023-05-07,C3198,Clothing,48.51,Debit Card,Baseline
+2023-05-08,C1193,Books,106.01,Debit Card,Baseline
+2023-05-08,C1661,Home & Garden,46.72,Debit Card,Baseline
+2023-05-08,C2928,Clothing,85.52,PayPal,Baseline
+2023-05-08,C3791,Home & Garden,44.81,PayPal,Baseline
+2023-05-08,C1777,Clothing,25.06,Credit Card,Baseline
+2023-05-08,C1054,Electronics,147.11,PayPal,Baseline
+2023-05-08,C1451,Clothing,63.93,Cash,Baseline
+2023-05-08,C4608,Groceries,167.55,Credit Card,Baseline
+2023-05-09,C4932,Groceries,66.12,PayPal,Baseline
+2023-05-09,C1050,Clothing,95.35,Debit Card,Baseline
+2023-05-09,C4230,Books,65.8,Debit Card,Baseline
+2023-05-09,C2401,Home & Garden,51.38,Credit Card,Baseline
+2023-05-09,C2492,Books,92.27,Cash,Baseline
+2023-05-09,C3608,Clothing,97.52,Debit Card,Baseline
+2023-05-09,C4874,Clothing,16.41,Credit Card,Baseline
+2023-05-09,C1167,Electronics,47.26,Cash,Baseline
+2023-05-10,C1536,Electronics,130.14,Credit Card,Baseline
+2023-05-10,C1116,Groceries,37.63,Debit Card,Baseline
+2023-05-10,C3410,Clothing,64.65,PayPal,Baseline
+2023-05-10,C3248,Groceries,59.35,Debit Card,Baseline
+2023-05-10,C1146,Electronics,174.51,Credit Card,Baseline
+2023-05-10,C3708,Clothing,286.94,Credit Card,Baseline
+2023-05-10,C3795,Books,73.27,Credit Card,Baseline
+2023-05-10,C4481,Electronics,202.75,PayPal,Baseline
+2023-05-10,C4778,Books,186.03,Credit Card,Baseline
+2023-05-10,C4687,Clothing,159.55,Debit Card,Baseline
+2023-05-11,C4502,Clothing,26.17,Debit Card,Baseline
+2023-05-11,C2314,Groceries,12.62,Debit Card,Baseline
+2023-05-11,C1492,Electronics,48.2,Debit Card,Baseline
+2023-05-11,C1010,Books,67.24,Credit Card,Baseline
+2023-05-11,C1951,Clothing,128.52,Credit Card,Baseline
+2023-05-11,C4191,Electronics,21.32,Debit Card,Baseline
+2023-05-11,C4708,Books,18.99,Debit Card,Baseline
+2023-05-12,C4884,Home & Garden,95.09,Debit Card,Baseline
+2023-05-12,C4086,Electronics,52.01,Credit Card,Baseline
+2023-05-12,C2486,Electronics,73.26,Credit Card,Baseline
+2023-05-12,C2711,Electronics,45.9,Debit Card,Baseline
+2023-05-12,C4005,Electronics,166.76,Credit Card,Baseline
+2023-05-12,C1795,Books,380.46,Debit Card,Baseline
+2023-05-12,C3712,Electronics,16.38,PayPal,Baseline
+2023-05-13,C4853,Home & Garden,22.64,Debit Card,Baseline
+2023-05-13,C2285,Electronics,26.67,Credit Card,Baseline
+2023-05-13,C1169,Clothing,62.81,Credit Card,Baseline
+2023-05-13,C3109,Clothing,36.8,Debit Card,Baseline
+2023-05-13,C3994,Groceries,41.95,Debit Card,Baseline
+2023-05-13,C4564,Groceries,80.3,Debit Card,Baseline
+2023-05-14,C4201,Home & Garden,66.65,Credit Card,Baseline
+2023-05-14,C2692,Groceries,16.27,Credit Card,Baseline
+2023-05-14,C2250,Groceries,31.27,Credit Card,Baseline
+2023-05-14,C3864,Electronics,41.79,Credit Card,Baseline
+2023-05-14,C1545,Groceries,39.22,Debit Card,Baseline
+2023-05-14,C4876,Books,84.52,Credit Card,Baseline
+2023-05-15,C3371,Electronics,62.05,Credit Card,Baseline
+2023-05-15,C1938,Electronics,111.0,Credit Card,Baseline
+2023-05-15,C2409,Clothing,203.19,Credit Card,Baseline
+2023-05-15,C4714,Electronics,36.84,PayPal,Baseline
+2023-05-15,C2888,Electronics,53.0,Credit Card,Baseline
+2023-05-16,C3995,Electronics,21.87,PayPal,Baseline
+2023-05-16,C4104,Books,15.61,Debit Card,Baseline
+2023-05-16,C4741,Home & Garden,84.88,PayPal,Baseline
+2023-05-16,C1814,Groceries,117.04,Debit Card,Baseline
+2023-05-16,C2296,Clothing,76.46,Debit Card,Baseline
+2023-05-16,C4942,Clothing,64.57,Credit Card,Baseline
+2023-05-17,C1473,Electronics,85.0,Debit Card,Baseline
+2023-05-17,C4294,Books,16.21,PayPal,Baseline
+2023-05-17,C4224,Books,79.29,Credit Card,Baseline
+2023-05-17,C2571,Groceries,21.95,Credit Card,Baseline
+2023-05-17,C1711,Electronics,14.44,Debit Card,Baseline
+2023-05-17,C2792,Groceries,21.01,Credit Card,Baseline
+2023-05-17,C4234,Electronics,35.7,Credit Card,Baseline
+2023-05-18,C3412,Books,75.78,Credit Card,Baseline
+2023-05-18,C4530,Home & Garden,190.71,PayPal,Baseline
+2023-05-18,C1107,Books,141.74,Credit Card,Baseline
+2023-05-18,C1039,Groceries,42.49,Debit Card,Baseline
+2023-05-18,C1028,Electronics,54.57,PayPal,Baseline
+2023-05-19,C1954,Books,149.84,Credit Card,Baseline
+2023-05-19,C2900,Groceries,33.45,Debit Card,Baseline
+2023-05-19,C3844,Clothing,158.09,Debit Card,Baseline
+2023-05-20,C2508,Electronics,58.45,Debit Card,Baseline
+2023-05-20,C2792,Clothing,32.68,Credit Card,Baseline
+2023-05-20,C1054,Electronics,47.23,PayPal,Baseline
+2023-05-20,C4045,Electronics,120.29,Cash,Baseline
+2023-05-20,C4948,Groceries,657.16,PayPal,Baseline
+2023-05-20,C4356,Books,24.21,Debit Card,Baseline
+2023-05-21,C3544,Clothing,18.5,Cash,Baseline
+2023-05-21,C1726,Clothing,107.69,Credit Card,Baseline
+2023-05-21,C4578,Electronics,87.14,PayPal,Baseline
+2023-05-21,C2998,Groceries,86.28,Cash,Baseline
+2023-05-21,C2799,Groceries,33.85,Debit Card,Baseline
+2023-05-22,C3919,Electronics,103.01,Debit Card,Baseline
+2023-05-22,C3444,Electronics,71.31,Credit Card,Baseline
+2023-05-22,C4191,Groceries,71.67,Debit Card,Baseline
+2023-05-22,C1933,Clothing,24.49,Debit Card,Baseline
+2023-05-22,C4715,Home & Garden,19.16,Credit Card,Baseline
+2023-05-22,C1249,Electronics,33.32,Credit Card,Baseline
+2023-05-23,C2757,Groceries,36.21,Debit Card,Baseline
+2023-05-23,C1244,Books,26.12,Credit Card,Baseline
+2023-05-23,C1984,Clothing,46.18,Cash,Baseline
+2023-05-23,C4845,Books,23.4,PayPal,Baseline
+2023-05-24,C3681,Clothing,76.76,Debit Card,Baseline
+2023-05-24,C1036,Electronics,30.95,Credit Card,Baseline
+2023-05-24,C1875,Home & Garden,26.45,Debit Card,Baseline
+2023-05-24,C3953,Books,87.43,Debit Card,Baseline
+2023-05-24,C4726,Electronics,24.57,Cash,Baseline
+2023-05-24,C1441,Books,206.27,Credit Card,Baseline
+2023-05-24,C3424,Books,43.93,Credit Card,Baseline
+2023-05-24,C1804,Electronics,56.42,Credit Card,Baseline
+2023-05-24,C4701,Books,25.1,PayPal,Baseline
+2023-05-24,C1710,Electronics,229.56,Debit Card,Baseline
+2023-05-25,C1474,Electronics,40.62,Credit Card,Baseline
+2023-05-25,C4911,Groceries,22.8,PayPal,Baseline
+2023-05-25,C1431,Clothing,52.73,Credit Card,Baseline
+2023-05-25,C1936,Groceries,46.18,Credit Card,Baseline
+2023-05-25,C2560,Home & Garden,114.14,Cash,Baseline
+2023-05-25,C3263,Books,19.98,Credit Card,Baseline
+2023-05-25,C1799,Electronics,104.14,Debit Card,Baseline
+2023-05-25,C3885,Electronics,152.22,PayPal,Baseline
+2023-05-25,C3913,Clothing,95.93,Debit Card,Baseline
+2023-05-25,C4042,Clothing,131.33,Credit Card,Baseline
+2023-05-26,C1922,Groceries,15.41,Credit Card,Baseline
+2023-05-26,C2349,Clothing,95.42,Credit Card,Baseline
+2023-05-26,C4390,Electronics,94.8,Cash,Baseline
+2023-05-26,C1957,Groceries,16.49,PayPal,Baseline
+2023-05-26,C4590,Groceries,78.75,PayPal,Baseline
+2023-05-26,C4057,Books,25.74,Credit Card,Baseline
+2023-05-27,C1813,Electronics,12.47,Debit Card,Baseline
+2023-05-27,C1148,Groceries,20.08,Credit Card,Baseline
+2023-05-27,C1074,Clothing,42.34,Debit Card,Baseline
+2023-05-27,C1574,Clothing,66.89,Credit Card,Baseline
+2023-05-27,C2879,Electronics,82.84,Credit Card,Baseline
+2023-05-27,C1709,Groceries,52.25,PayPal,Baseline
+2023-05-27,C2790,Groceries,27.28,PayPal,Baseline
+2023-05-27,C3482,Clothing,96.22,Cash,Baseline
+2023-05-27,C3745,Clothing,27.26,PayPal,Baseline
+2023-05-27,C3421,Clothing,28.6,PayPal,Baseline
+2023-05-28,C1722,Electronics,53.45,Credit Card,Baseline
+2023-05-28,C4029,Books,33.0,Credit Card,Baseline
+2023-05-28,C2184,Groceries,91.48,Credit Card,Baseline
+2023-05-28,C3972,Clothing,230.54,Debit Card,Baseline
+2023-05-28,C2990,Electronics,127.08,PayPal,Baseline
+2023-05-29,C4646,Home & Garden,81.43,PayPal,Baseline
+2023-05-29,C2631,Groceries,45.41,Credit Card,Baseline
+2023-05-29,C2996,Clothing,58.47,Cash,Baseline
+2023-05-30,C1724,Books,82.18,Credit Card,Baseline
+2023-05-30,C2303,Electronics,84.58,Debit Card,Baseline
+2023-05-30,C2265,Clothing,17.74,Debit Card,Baseline
+2023-05-31,C4810,Electronics,43.65,Credit Card,Baseline
+2023-05-31,C1848,Groceries,40.01,Credit Card,Baseline
+2023-05-31,C2039,Groceries,42.24,Debit Card,Baseline
+2023-05-31,C2199,Clothing,119.18,PayPal,Baseline
+2023-05-31,C4744,Groceries,36.36,PayPal,Baseline
+2023-05-31,C3674,Clothing,32.56,Credit Card,Baseline
+2023-05-31,C2636,Clothing,56.11,Credit Card,Baseline
+2023-05-31,C4093,Groceries,41.22,PayPal,Baseline
+2023-05-31,C4281,Books,34.82,Cash,Baseline
+2023-05-31,C1588,Electronics,33.66,Credit Card,Baseline
+2023-06-01,C3322,Clothing,31.8,Credit Card,Baseline
+2023-06-01,C2458,Clothing,70.51,Credit Card,Baseline
+2023-06-01,C4389,Electronics,26.96,Debit Card,Baseline
+2023-06-01,C4594,Electronics,27.23,Debit Card,Baseline
+2023-06-01,C2682,Electronics,178.63,Credit Card,Baseline
+2023-06-01,C3752,Books,111.3,Credit Card,Baseline
+2023-06-01,C2645,Books,81.51,Credit Card,Baseline
+2023-06-01,C3845,Home & Garden,32.35,Debit Card,Baseline
+2023-06-01,C1097,Home & Garden,99.02,Credit Card,Baseline
+2023-06-01,C1703,Groceries,79.09,Credit Card,Baseline
+2023-06-01,C4376,Clothing,48.64,Debit Card,Baseline
+2023-06-01,C1339,Groceries,104.49,Credit Card,Baseline
+2023-06-02,C4577,Groceries,53.76,Debit Card,Baseline
+2023-06-02,C2939,Electronics,26.53,Credit Card,Baseline
+2023-06-02,C4211,Electronics,47.49,Credit Card,Baseline
+2023-06-02,C3941,Groceries,81.57,Debit Card,Baseline
+2023-06-02,C2394,Clothing,29.66,Credit Card,Baseline
+2023-06-03,C3243,Clothing,49.16,Debit Card,Baseline
+2023-06-03,C4741,Books,36.84,Credit Card,Baseline
+2023-06-03,C2913,Electronics,35.18,Credit Card,Baseline
+2023-06-03,C1569,Clothing,71.38,Debit Card,Baseline
+2023-06-03,C1454,Electronics,38.73,Cash,Baseline
+2023-06-03,C3343,Electronics,182.9,Credit Card,Baseline
+2023-06-04,C2137,Electronics,34.75,Credit Card,Baseline
+2023-06-04,C4736,Clothing,45.44,Credit Card,Baseline
+2023-06-04,C4156,Home & Garden,37.99,Credit Card,Baseline
+2023-06-04,C4642,Electronics,42.96,PayPal,Baseline
+2023-06-04,C2430,Groceries,22.17,Credit Card,Baseline
+2023-06-05,C1388,Electronics,21.79,Credit Card,Baseline
+2023-06-06,C4593,Electronics,32.46,Debit Card,Baseline
+2023-06-06,C2062,Home & Garden,77.43,PayPal,Baseline
+2023-06-06,C3996,Electronics,82.39,PayPal,Baseline
+2023-06-07,C4450,Groceries,198.31,Credit Card,Baseline
+2023-06-07,C3626,Books,109.89,Cash,Baseline
+2023-06-07,C1804,Electronics,40.44,Debit Card,Baseline
+2023-06-07,C1054,Electronics,36.34,Credit Card,Baseline
+2023-06-08,C2107,Books,134.19,Credit Card,Baseline
+2023-06-08,C1747,Electronics,24.45,Credit Card,Baseline
+2023-06-08,C3852,Electronics,89.44,PayPal,Baseline
+2023-06-09,C4212,Clothing,103.58,Cash,Baseline
+2023-06-09,C2804,Electronics,71.88,Debit Card,Baseline
+2023-06-09,C2324,Groceries,290.25,PayPal,Baseline
+2023-06-09,C4030,Electronics,29.07,Debit Card,Baseline
+2023-06-09,C2250,Electronics,40.99,Cash,Baseline
+2023-06-09,C1385,Electronics,67.71,Debit Card,Baseline
+2023-06-09,C3730,Clothing,20.34,Credit Card,Baseline
+2023-06-09,C4877,Groceries,39.91,Credit Card,Baseline
+2023-06-09,C3861,Groceries,118.19,PayPal,Baseline
+2023-06-10,C1131,Electronics,57.99,Debit Card,Baseline
+2023-06-10,C1914,Clothing,89.82,Credit Card,Baseline
+2023-06-10,C3538,Electronics,146.78,Cash,Baseline
+2023-06-10,C1704,Groceries,16.04,Debit Card,Baseline
+2023-06-10,C3116,Groceries,12.27,Debit Card,Baseline
+2023-06-10,C1062,Electronics,46.62,Cash,Baseline
+2023-06-10,C1310,Electronics,173.96,Credit Card,Baseline
+2023-06-10,C1771,Clothing,30.8,Debit Card,Baseline
+2023-06-10,C4538,Groceries,97.97,Credit Card,Baseline
+2023-06-10,C3332,Groceries,31.81,Debit Card,Baseline
+2023-06-10,C2701,Groceries,57.28,Credit Card,Baseline
+2023-06-10,C2823,Clothing,123.84,Credit Card,Baseline
+2023-06-11,C1129,Groceries,27.3,Debit Card,Baseline
+2023-06-11,C2855,Home & Garden,41.76,Cash,Baseline
+2023-06-11,C2776,Books,108.6,Debit Card,Baseline
+2023-06-11,C3204,Groceries,37.1,Credit Card,Baseline
+2023-06-11,C2664,Electronics,54.07,Cash,Baseline
+2023-06-12,C3161,Electronics,90.77,PayPal,Baseline
+2023-06-12,C3062,Home & Garden,53.17,Credit Card,Baseline
+2023-06-12,C4767,Home & Garden,59.55,PayPal,Baseline
+2023-06-12,C3711,Electronics,157.13,Debit Card,Baseline
+2023-06-12,C1334,Electronics,77.6,PayPal,Baseline
+2023-06-12,C4524,Clothing,54.76,Credit Card,Baseline
+2023-06-13,C4110,Clothing,124.99,Debit Card,Baseline
+2023-06-13,C4215,Clothing,64.76,PayPal,Baseline
+2023-06-13,C2203,Home & Garden,65.27,Debit Card,Baseline
+2023-06-13,C2165,Clothing,123.24,Credit Card,Baseline
+2023-06-13,C3601,Books,129.13,Credit Card,Baseline
+2023-06-13,C1130,Electronics,146.73,Debit Card,Baseline
+2023-06-13,C2252,Clothing,94.08,Credit Card,Baseline
+2023-06-14,C2636,Books,218.33,Debit Card,Baseline
+2023-06-14,C2466,Books,54.91,Credit Card,Baseline
+2023-06-14,C1824,Clothing,56.28,Debit Card,Baseline
+2023-06-15,C1579,Electronics,22.92,Credit Card,Baseline
+2023-06-15,C4495,Electronics,54.65,PayPal,Baseline
+2023-06-15,C4612,Electronics,49.38,Credit Card,Baseline
+2023-06-15,C4561,Groceries,32.19,Debit Card,Baseline
+2023-06-15,C1738,Clothing,40.94,PayPal,Baseline
+2023-06-16,C4232,Home & Garden,22.35,Debit Card,Baseline
+2023-06-16,C3190,Electronics,17.72,Cash,Baseline
+2023-06-16,C4157,Electronics,106.82,PayPal,Baseline
+2023-06-16,C4033,Electronics,143.96,Credit Card,Baseline
+2023-06-17,C2762,Clothing,55.23,Debit Card,Baseline
+2023-06-17,C2247,Clothing,70.04,Debit Card,Baseline
+2023-06-17,C3051,Books,14.66,PayPal,Baseline
+2023-06-17,C2500,Electronics,43.16,PayPal,Baseline
+2023-06-17,C2002,Groceries,48.37,Credit Card,Baseline
+2023-06-17,C4453,Home & Garden,17.82,Cash,Baseline
+2023-06-18,C4293,Electronics,20.26,Cash,Baseline
+2023-06-18,C1571,Clothing,115.94,Credit Card,Baseline
+2023-06-19,C2347,Electronics,76.65,Credit Card,Baseline
+2023-06-19,C4798,Clothing,55.46,Credit Card,Baseline
+2023-06-19,C2889,Books,70.97,Debit Card,Baseline
+2023-06-19,C3641,Home & Garden,51.56,Credit Card,Baseline
+2023-06-19,C1513,Electronics,23.16,Credit Card,Baseline
+2023-06-19,C3343,Electronics,60.25,Credit Card,Baseline
+2023-06-20,C2312,Clothing,31.57,Credit Card,Baseline
+2023-06-20,C4040,Electronics,14.2,Debit Card,Baseline
+2023-06-21,C4300,Books,37.3,Credit Card,Baseline
+2023-06-21,C1793,Books,121.57,Debit Card,Baseline
+2023-06-21,C4417,Groceries,90.96,PayPal,Baseline
+2023-06-21,C1197,Electronics,93.42,Credit Card,Baseline
+2023-06-21,C3122,Clothing,69.86,PayPal,Baseline
+2023-06-21,C2562,Electronics,28.37,Credit Card,Baseline
+2023-06-22,C1758,Clothing,25.39,Credit Card,Baseline
+2023-06-22,C4588,Books,97.25,Debit Card,Baseline
+2023-06-22,C3126,Electronics,94.0,Debit Card,Baseline
+2023-06-22,C4959,Books,23.96,Debit Card,Baseline
+2023-06-22,C4190,Electronics,41.98,Debit Card,Baseline
+2023-06-22,C4212,Groceries,52.51,Credit Card,Baseline
+2023-06-23,C1826,Groceries,95.24,Credit Card,Baseline
+2023-06-23,C1822,Electronics,54.62,Credit Card,Baseline
+2023-06-24,C2683,Clothing,68.78,Cash,Baseline
+2023-06-24,C2318,Clothing,56.54,Cash,Baseline
+2023-06-24,C1329,Electronics,35.15,Credit Card,Baseline
+2023-06-24,C3626,Electronics,29.92,PayPal,Baseline
+2023-06-25,C2901,Clothing,81.81,Credit Card,Baseline
+2023-06-25,C3747,Home & Garden,51.39,Debit Card,Baseline
+2023-06-25,C4629,Electronics,55.44,Credit Card,Baseline
+2023-06-26,C4152,Groceries,219.45,Debit Card,Baseline
+2023-06-26,C3139,Books,45.25,Cash,Baseline
+2023-06-26,C2325,Electronics,36.51,Debit Card,Baseline
+2023-06-26,C3611,Clothing,51.74,Credit Card,Baseline
+2023-06-26,C4549,Electronics,36.48,Debit Card,Baseline
+2023-06-27,C3271,Electronics,15.35,Credit Card,Baseline
+2023-06-27,C3371,Clothing,74.63,Credit Card,Baseline
+2023-06-27,C1966,Groceries,53.79,PayPal,Baseline
+2023-06-27,C3670,Electronics,32.48,Cash,Baseline
+2023-06-27,C2710,Electronics,125.97,PayPal,Baseline
+2023-06-27,C1989,Electronics,41.03,Credit Card,Baseline
+2023-06-27,C1933,Groceries,210.19,Credit Card,Baseline
+2023-06-28,C4160,Electronics,41.89,Credit Card,Baseline
+2023-06-28,C2030,Groceries,24.37,Cash,Baseline
+2023-06-28,C1362,Groceries,22.54,Credit Card,Baseline
+2023-06-28,C3926,Books,44.22,Credit Card,Baseline
+2023-06-28,C2708,Home & Garden,15.2,PayPal,Baseline
+2023-06-28,C3682,Electronics,84.7,Debit Card,Baseline
+2023-06-28,C4383,Electronics,122.24,Credit Card,Baseline
+2023-06-29,C1046,Electronics,47.16,Debit Card,Baseline
+2023-06-29,C4072,Clothing,47.73,PayPal,Baseline
+2023-06-29,C3084,Electronics,232.16,Credit Card,Baseline
+2023-06-29,C1825,Electronics,146.93,Debit Card,Baseline
+2023-06-29,C1793,Clothing,42.5,PayPal,Baseline
+2023-06-29,C3560,Clothing,214.54,PayPal,Baseline
+2023-06-29,C3106,Electronics,77.54,Credit Card,Baseline
+2023-07-01,C1018,Electronics,92.09,PayPal,Current
+2023-07-01,C4557,Electronics,48.33,Debit Card,Current
+2023-07-01,C2075,Clothing,90.51,PayPal,Current
+2023-07-01,C2796,Electronics,1158.2,Debit Card,Current
+2023-07-01,C4645,Groceries,34.3,Credit Card,Current
+2023-07-01,C3471,Electronics,108.31,PayPal,Current
+2023-07-02,C3857,Electronics,298.9,Debit Card,Current
+2023-07-02,C4566,Groceries,93.19,PayPal,Current
+2023-07-02,C3078,Books,79.49,Debit Card,Current
+2023-07-02,C4829,Electronics,237.1,Credit Card,Current
+2023-07-02,C4144,Clothing,21.46,PayPal,Current
+2023-07-02,C3697,Electronics,64.87,Debit Card,Current
+2023-07-03,C2292,Electronics,136.41,Credit Card,Current
+2023-07-03,C3601,Clothing,97.03,Debit Card,Current
+2023-07-03,C1445,Groceries,424.83,PayPal,Current
+2023-07-03,C2223,Electronics,67.97,Cash,Current
+2023-07-04,C2469,Clothing,116.68,Credit Card,Current
+2023-07-04,C3750,Electronics,88.88,PayPal,Current
+2023-07-04,C3729,Electronics,161.2,PayPal,Current
+2023-07-04,C4459,Clothing,245.88,Credit Card,Current
+2023-07-05,C4035,Electronics,102.04,Credit Card,Current
+2023-07-05,C1250,Clothing,80.11,Credit Card,Current
+2023-07-05,C3053,Electronics,237.23,PayPal,Current
+2023-07-06,C4486,Electronics,1189.13,Credit Card,Current
+2023-07-06,C1991,Clothing,34.47,Debit Card,Current
+2023-07-06,C2491,Clothing,100.59,PayPal,Current
+2023-07-06,C3201,Electronics,150.99,PayPal,Current
+2023-07-07,C1044,Electronics,57.96,PayPal,Current
+2023-07-07,C4129,Clothing,165.05,Debit Card,Current
+2023-07-07,C3198,Clothing,252.2,Debit Card,Current
+2023-07-07,C3373,Electronics,284.53,PayPal,Current
+2023-07-07,C1919,Electronics,201.78,PayPal,Current
+2023-07-07,C2025,Groceries,47.93,PayPal,Current
+2023-07-08,C1024,Clothing,302.11,Credit Card,Current
+2023-07-08,C3106,Electronics,272.21,PayPal,Current
+2023-07-08,C3885,Electronics,86.55,Credit Card,Current
+2023-07-08,C2005,Clothing,293.57,Credit Card,Current
+2023-07-09,C1522,Clothing,93.58,PayPal,Current
+2023-07-09,C3111,Home & Garden,371.69,PayPal,Current
+2023-07-09,C3772,Clothing,103.64,Credit Card,Current
+2023-07-09,C1257,Electronics,981.53,Credit Card,Current
+2023-07-09,C3635,Electronics,47.28,PayPal,Current
+2023-07-09,C3246,Groceries,44.91,PayPal,Current
+2023-07-10,C1148,Electronics,110.57,Credit Card,Current
+2023-07-10,C2381,Groceries,73.9,Credit Card,Current
+2023-07-10,C4406,Clothing,24.66,PayPal,Current
+2023-07-10,C1337,Groceries,63.98,Credit Card,Current
+2023-07-10,C3253,Home & Garden,56.6,PayPal,Current
+2023-07-10,C4976,Electronics,61.41,PayPal,Current
+2023-07-10,C1969,Electronics,123.96,Credit Card,Current
+2023-07-10,C4932,Home & Garden,68.23,PayPal,Current
+2023-07-10,C4483,Electronics,21.58,PayPal,Current
+2023-07-11,C2017,Electronics,160.11,Credit Card,Current
+2023-07-11,C3723,Electronics,43.0,Credit Card,Current
+2023-07-11,C3068,Groceries,39.99,Cash,Current
+2023-07-11,C1897,Electronics,473.61,PayPal,Current
+2023-07-12,C4260,Electronics,107.72,PayPal,Current
+2023-07-12,C3597,Clothing,115.74,Debit Card,Current
+2023-07-12,C4310,Clothing,56.64,Debit Card,Current
+2023-07-12,C1595,Groceries,139.23,Credit Card,Current
+2023-07-12,C3305,Clothing,149.27,Debit Card,Current
+2023-07-13,C4051,Clothing,92.05,Credit Card,Current
+2023-07-13,C3272,Groceries,147.25,Credit Card,Current
+2023-07-13,C1779,Groceries,69.15,Credit Card,Current
+2023-07-13,C1613,Groceries,52.98,PayPal,Current
+2023-07-13,C1726,Groceries,1294.27,PayPal,Current
+2023-07-13,C1560,Electronics,15.41,PayPal,Current
+2023-07-13,C2628,Groceries,112.97,PayPal,Current
+2023-07-13,C4367,Books,31.21,Debit Card,Current
+2023-07-14,C4235,Clothing,129.79,Credit Card,Current
+2023-07-14,C2134,Clothing,105.34,Credit Card,Current
+2023-07-14,C4794,Electronics,1087.14,PayPal,Current
+2023-07-14,C3004,Groceries,110.95,Cash,Current
+2023-07-14,C4394,Electronics,98.83,Debit Card,Current
+2023-07-14,C4691,Clothing,269.39,Credit Card,Current
+2023-07-14,C4128,Clothing,9.86,Credit Card,Current
+2023-07-14,C4926,Electronics,125.14,Credit Card,Current
+2023-07-15,C1915,Electronics,89.76,Credit Card,Current
+2023-07-15,C3508,Home & Garden,140.18,Debit Card,Current
+2023-07-15,C1028,Clothing,658.74,PayPal,Current
+2023-07-15,C2148,Electronics,64.77,Credit Card,Current
+2023-07-15,C3164,Home & Garden,16.59,Credit Card,Current
+2023-07-15,C1868,Books,160.51,Credit Card,Current
+2023-07-15,C4486,Electronics,106.17,Debit Card,Current
+2023-07-15,C4099,Electronics,179.58,Credit Card,Current
+2023-07-16,C3889,Groceries,96.97,Credit Card,Current
+2023-07-16,C1314,Clothing,132.59,Debit Card,Current
+2023-07-16,C4985,Electronics,37.66,Debit Card,Current
+2023-07-16,C2221,Clothing,155.21,Credit Card,Current
+2023-07-16,C3665,Books,439.29,PayPal,Current
+2023-07-16,C1922,Groceries,88.18,PayPal,Current
+2023-07-16,C4584,Groceries,66.14,Credit Card,Current
+2023-07-16,C4483,Groceries,91.96,Credit Card,Current
+2023-07-17,C1969,Electronics,950.13,Credit Card,Current
+2023-07-17,C3248,Clothing,146.92,Credit Card,Current
+2023-07-17,C2061,Books,284.42,Debit Card,Current
+2023-07-17,C3144,Electronics,49.67,Credit Card,Current
+2023-07-17,C4880,Groceries,122.57,Credit Card,Current
+2023-07-17,C1402,Electronics,55.64,Debit Card,Current
+2023-07-17,C3725,Books,83.55,Credit Card,Current
+2023-07-17,C1896,Clothing,99.9,Cash,Current
+2023-07-17,C3486,Electronics,158.33,PayPal,Current
+2023-07-18,C4326,Electronics,348.57,Credit Card,Current
+2023-07-18,C2564,Groceries,29.87,Credit Card,Current
+2023-07-18,C4258,Clothing,84.91,Debit Card,Current
+2023-07-18,C2233,Electronics,48.56,Credit Card,Current
+2023-07-18,C3740,Groceries,44.5,Credit Card,Current
+2023-07-18,C2521,Clothing,645.85,Cash,Current
+2023-07-18,C3810,Clothing,42.41,Cash,Current
+2023-07-18,C4245,Clothing,25.12,Credit Card,Current
+2023-07-19,C3231,Electronics,204.21,PayPal,Current
+2023-07-19,C2093,Groceries,79.97,Debit Card,Current
+2023-07-19,C1580,Groceries,153.16,Credit Card,Current
+2023-07-19,C1223,Clothing,154.12,PayPal,Current
+2023-07-19,C3272,Clothing,341.81,PayPal,Current
+2023-07-19,C4657,Electronics,55.5,PayPal,Current
+2023-07-20,C3439,Electronics,44.99,Debit Card,Current
+2023-07-20,C4535,Electronics,113.14,PayPal,Current
+2023-07-20,C4372,Electronics,43.25,Debit Card,Current
+2023-07-20,C3906,Electronics,33.28,Credit Card,Current
+2023-07-20,C2850,Clothing,50.15,Credit Card,Current
+2023-07-20,C3283,Electronics,70.26,Credit Card,Current
+2023-07-21,C3456,Electronics,126.82,PayPal,Current
+2023-07-21,C2545,Electronics,69.28,PayPal,Current
+2023-07-21,C3986,Electronics,45.13,Credit Card,Current
+2023-07-21,C4908,Clothing,106.73,Debit Card,Current
+2023-07-22,C2105,Electronics,53.67,Debit Card,Current
+2023-07-22,C2552,Electronics,127.03,Debit Card,Current
+2023-07-22,C1564,Electronics,591.16,PayPal,Current
+2023-07-22,C3042,Clothing,48.05,Debit Card,Current
+2023-07-22,C2391,Electronics,658.55,PayPal,Current
+2023-07-22,C1813,Clothing,276.98,Credit Card,Current
+2023-07-23,C2502,Electronics,41.9,PayPal,Current
+2023-07-23,C2982,Home & Garden,112.22,PayPal,Current
+2023-07-23,C2850,Electronics,124.9,Credit Card,Current
+2023-07-23,C4576,Clothing,155.26,Credit Card,Current
+2023-07-23,C4074,Electronics,39.67,PayPal,Current
+2023-07-23,C4799,Electronics,300.46,Credit Card,Current
+2023-07-23,C3034,Home & Garden,160.35,PayPal,Current
+2023-07-23,C1067,Electronics,50.38,Credit Card,Current
+2023-07-24,C3266,Electronics,183.53,Debit Card,Current
+2023-07-24,C2169,Electronics,147.2,Credit Card,Current
+2023-07-24,C1602,Electronics,129.03,PayPal,Current
+2023-07-25,C3910,Electronics,81.58,Credit Card,Current
+2023-07-25,C2164,Groceries,109.55,Cash,Current
+2023-07-25,C1370,Electronics,119.49,Credit Card,Current
+2023-07-25,C4672,Home & Garden,48.3,Cash,Current
+2023-07-25,C3415,Groceries,60.5,PayPal,Current
+2023-07-26,C1162,Clothing,23.96,Credit Card,Current
+2023-07-26,C2139,Electronics,42.7,Debit Card,Current
+2023-07-26,C2397,Home & Garden,540.75,PayPal,Current
+2023-07-26,C1199,Electronics,59.53,Credit Card,Current
+2023-07-26,C2152,Electronics,197.41,Credit Card,Current
+2023-07-26,C4745,Clothing,421.69,Credit Card,Current
+2023-07-26,C1545,Electronics,16.26,Credit Card,Current
+2023-07-26,C2173,Home & Garden,61.58,PayPal,Current
+2023-07-27,C1118,Books,35.67,Credit Card,Current
+2023-07-27,C3744,Home & Garden,190.87,PayPal,Current
+2023-07-27,C4780,Electronics,99.36,Credit Card,Current
+2023-07-27,C4443,Home & Garden,20.79,PayPal,Current
+2023-07-27,C2632,Groceries,70.08,Debit Card,Current
+2023-07-28,C3332,Clothing,132.87,Credit Card,Current
+2023-07-28,C1777,Electronics,172.43,Credit Card,Current
+2023-07-28,C3665,Electronics,238.47,PayPal,Current
+2023-07-28,C1309,Electronics,35.23,Debit Card,Current
+2023-07-29,C4460,Groceries,366.4,Debit Card,Current
+2023-07-29,C4371,Groceries,196.19,Debit Card,Current
+2023-07-29,C2099,Clothing,141.69,Cash,Current
+2023-07-30,C3715,Groceries,34.82,PayPal,Current
+2023-07-30,C4706,Groceries,45.28,Cash,Current
+2023-07-30,C4155,Home & Garden,132.78,Debit Card,Current
+2023-07-30,C1640,Clothing,203.67,PayPal,Current
+2023-07-30,C4496,Books,103.07,PayPal,Current
+2023-07-30,C1988,Clothing,96.77,PayPal,Current
+2023-07-31,C4610,Clothing,94.12,Credit Card,Current
+2023-07-31,C1771,Home & Garden,114.55,Credit Card,Current
+2023-07-31,C3311,Clothing,15.97,Credit Card,Current
+2023-07-31,C4075,Home & Garden,143.86,Credit Card,Current
+2023-07-31,C2185,Groceries,429.79,PayPal,Current
+2023-07-31,C3571,Electronics,154.38,PayPal,Current
+2023-08-01,C3243,Electronics,35.83,Debit Card,Current
+2023-08-01,C3510,Electronics,252.07,PayPal,Current
+2023-08-01,C4905,Electronics,432.18,Credit Card,Current
+2023-08-01,C3580,Clothing,306.15,PayPal,Current
+2023-08-01,C2717,Electronics,255.42,PayPal,Current
+2023-08-01,C4064,Home & Garden,655.95,PayPal,Current
+2023-08-02,C1357,Books,40.45,PayPal,Current
+2023-08-02,C4373,Home & Garden,41.0,Credit Card,Current
+2023-08-03,C1508,Electronics,165.44,Credit Card,Current
+2023-08-03,C1013,Clothing,50.04,Credit Card,Current
+2023-08-03,C1061,Electronics,202.91,Credit Card,Current
+2023-08-03,C4362,Home & Garden,77.93,Debit Card,Current
+2023-08-03,C1215,Electronics,96.0,Debit Card,Current
+2023-08-03,C2407,Electronics,74.37,PayPal,Current
+2023-08-03,C4010,Books,36.78,Debit Card,Current
+2023-08-04,C1065,Clothing,153.77,Debit Card,Current
+2023-08-04,C4342,Electronics,26.93,Debit Card,Current
+2023-08-04,C1048,Clothing,39.15,Debit Card,Current
+2023-08-04,C3006,Electronics,84.71,PayPal,Current
+2023-08-04,C3261,Electronics,601.95,Credit Card,Current
+2023-08-04,C3594,Home & Garden,106.52,PayPal,Current
+2023-08-04,C3446,Clothing,227.18,PayPal,Current
+2023-08-04,C4769,Electronics,130.2,PayPal,Current
+2023-08-05,C3667,Books,186.39,Credit Card,Current
+2023-08-05,C3467,Clothing,22.42,PayPal,Current
+2023-08-05,C1693,Electronics,14.77,Credit Card,Current
+2023-08-05,C4569,Groceries,47.51,Cash,Current
+2023-08-05,C3265,Home & Garden,644.2,Credit Card,Current
+2023-08-06,C2015,Clothing,43.73,PayPal,Current
+2023-08-06,C1926,Electronics,41.12,Credit Card,Current
+2023-08-07,C2978,Electronics,47.32,Debit Card,Current
+2023-08-07,C1421,Electronics,85.23,PayPal,Current
+2023-08-07,C1207,Groceries,99.79,Credit Card,Current
+2023-08-07,C2728,Clothing,177.93,Credit Card,Current
+2023-08-07,C4761,Electronics,67.75,Debit Card,Current
+2023-08-07,C3703,Groceries,412.75,Credit Card,Current
+2023-08-07,C1551,Groceries,946.4,Debit Card,Current
+2023-08-08,C2997,Books,309.49,PayPal,Current
+2023-08-08,C4901,Electronics,61.6,Cash,Current
+2023-08-08,C1343,Clothing,30.73,Debit Card,Current
+2023-08-09,C3251,Electronics,127.39,Debit Card,Current
+2023-08-09,C3803,Electronics,274.98,Credit Card,Current
+2023-08-09,C2882,Clothing,246.48,Credit Card,Current
+2023-08-09,C2723,Clothing,336.6,Debit Card,Current
+2023-08-09,C3427,Groceries,41.79,PayPal,Current
+2023-08-09,C1411,Books,103.18,Credit Card,Current
+2023-08-10,C3371,Clothing,40.01,PayPal,Current
+2023-08-10,C4516,Electronics,43.37,Debit Card,Current
+2023-08-10,C3637,Electronics,292.21,PayPal,Current
+2023-08-10,C2264,Clothing,136.29,Debit Card,Current
+2023-08-11,C4242,Electronics,65.86,PayPal,Current
+2023-08-11,C2089,Clothing,26.72,Credit Card,Current
+2023-08-11,C3823,Electronics,26.4,PayPal,Current
+2023-08-11,C1471,Electronics,31.46,Debit Card,Current
+2023-08-11,C1158,Electronics,30.42,Debit Card,Current
+2023-08-11,C3688,Electronics,113.48,PayPal,Current
+2023-08-11,C1332,Clothing,92.7,PayPal,Current
+2023-08-11,C4352,Electronics,53.9,Credit Card,Current
+2023-08-11,C1492,Books,159.47,Cash,Current
+2023-08-11,C2502,Books,18.35,Debit Card,Current
+2023-08-12,C4310,Clothing,50.08,Credit Card,Current
+2023-08-12,C4302,Electronics,121.4,Debit Card,Current
+2023-08-13,C1081,Electronics,54.25,PayPal,Current
+2023-08-13,C4590,Groceries,49.99,Credit Card,Current
+2023-08-13,C2280,Clothing,117.51,Debit Card,Current
+2023-08-13,C3022,Electronics,44.4,Cash,Current
+2023-08-13,C2444,Clothing,224.36,Credit Card,Current
+2023-08-14,C1188,Electronics,368.61,PayPal,Current
+2023-08-14,C1317,Electronics,607.04,PayPal,Current
+2023-08-14,C1283,Electronics,85.7,PayPal,Current
+2023-08-14,C2548,Groceries,53.36,Credit Card,Current
+2023-08-14,C2332,Electronics,74.06,PayPal,Current
+2023-08-14,C2828,Groceries,60.53,Debit Card,Current
+2023-08-15,C4990,Home & Garden,22.17,PayPal,Current
+2023-08-15,C3707,Books,81.29,PayPal,Current
+2023-08-15,C2374,Electronics,155.87,Credit Card,Current
+2023-08-15,C4964,Groceries,99.66,PayPal,Current
+2023-08-16,C4959,Electronics,56.09,Debit Card,Current
+2023-08-16,C3383,Home & Garden,210.32,Debit Card,Current
+2023-08-16,C3679,Electronics,63.3,Debit Card,Current
+2023-08-17,C2934,Electronics,50.42,PayPal,Current
+2023-08-17,C1348,Clothing,76.16,PayPal,Current
+2023-08-17,C3656,Clothing,48.86,Credit Card,Current
+2023-08-17,C1104,Electronics,124.83,PayPal,Current
+2023-08-17,C4446,Books,326.79,PayPal,Current
+2023-08-17,C1455,Clothing,64.63,Debit Card,Current
+2023-08-17,C3561,Electronics,96.56,Debit Card,Current
+2023-08-18,C3575,Electronics,400.35,Debit Card,Current
+2023-08-18,C3735,Electronics,44.09,Credit Card,Current
+2023-08-18,C2749,Electronics,7.61,Credit Card,Current
+2023-08-18,C2875,Electronics,308.84,Debit Card,Current
+2023-08-18,C3511,Electronics,67.25,Cash,Current
+2023-08-19,C1226,Groceries,41.05,Cash,Current
+2023-08-19,C4301,Books,147.2,Debit Card,Current
+2023-08-19,C1079,Electronics,83.1,Credit Card,Current
+2023-08-19,C3533,Home & Garden,242.09,Credit Card,Current
+2023-08-19,C2394,Home & Garden,102.16,Credit Card,Current
+2023-08-19,C3347,Electronics,26.98,Credit Card,Current
+2023-08-20,C4147,Books,153.38,Credit Card,Current
+2023-08-20,C3785,Groceries,91.32,PayPal,Current
+2023-08-20,C2506,Electronics,82.76,Credit Card,Current
+2023-08-20,C3835,Home & Garden,118.64,PayPal,Current
+2023-08-20,C1887,Electronics,616.97,Credit Card,Current
+2023-08-20,C3794,Electronics,54.32,Credit Card,Current
+2023-08-21,C3842,Groceries,67.38,PayPal,Current
+2023-08-21,C4856,Electronics,167.41,Debit Card,Current
+2023-08-21,C2574,Electronics,113.08,Credit Card,Current
+2023-08-21,C1313,Clothing,75.88,Credit Card,Current
+2023-08-21,C4803,Electronics,51.97,Debit Card,Current
+2023-08-21,C3607,Electronics,65.48,Credit Card,Current
+2023-08-22,C1386,Clothing,205.84,Debit Card,Current
+2023-08-22,C3933,Groceries,182.5,PayPal,Current
+2023-08-22,C4218,Clothing,210.0,Debit Card,Current
+2023-08-22,C2996,Clothing,76.05,Debit Card,Current
+2023-08-23,C1236,Clothing,415.41,Credit Card,Current
+2023-08-23,C2096,Clothing,48.27,PayPal,Current
+2023-08-23,C2189,Groceries,143.72,Debit Card,Current
+2023-08-23,C3282,Electronics,44.8,Debit Card,Current
+2023-08-23,C2381,Books,36.8,Credit Card,Current
+2023-08-24,C1044,Electronics,89.0,Credit Card,Current
+2023-08-24,C4992,Electronics,363.69,PayPal,Current
+2023-08-24,C1417,Books,565.74,PayPal,Current
+2023-08-25,C1258,Home & Garden,85.87,Debit Card,Current
+2023-08-25,C2459,Electronics,64.34,PayPal,Current
+2023-08-25,C3760,Clothing,544.94,Credit Card,Current
+2023-08-25,C4796,Electronics,328.87,Credit Card,Current
+2023-08-25,C2080,Groceries,13.1,Debit Card,Current
+2023-08-25,C2834,Books,23.44,Debit Card,Current
+2023-08-26,C2840,Groceries,393.66,Debit Card,Current
+2023-08-26,C2240,Clothing,298.44,Debit Card,Current
+2023-08-26,C4592,Clothing,131.33,Credit Card,Current
+2023-08-26,C4161,Clothing,55.88,PayPal,Current
+2023-08-26,C3900,Groceries,495.72,Debit Card,Current
+2023-08-26,C2278,Clothing,321.5,Debit Card,Current
+2023-08-26,C1065,Clothing,92.85,Debit Card,Current
+2023-08-26,C1662,Groceries,19.3,PayPal,Current
+2023-08-27,C3064,Electronics,43.36,PayPal,Current
+2023-08-27,C2311,Electronics,110.84,PayPal,Current
+2023-08-27,C2399,Clothing,32.45,Debit Card,Current
+2023-08-27,C1569,Clothing,166.93,PayPal,Current
+2023-08-28,C3864,Clothing,46.36,Credit Card,Current
+2023-08-28,C1203,Electronics,628.77,Credit Card,Current
+2023-08-28,C2151,Clothing,72.07,Credit Card,Current
+2023-08-28,C3651,Home & Garden,74.77,Credit Card,Current
+2023-08-29,C3577,Electronics,75.49,Credit Card,Current
+2023-08-29,C4681,Electronics,45.74,PayPal,Current
+2023-08-30,C4250,Groceries,102.78,Credit Card,Current
+2023-08-30,C3241,Clothing,290.15,PayPal,Current
+2023-08-30,C4717,Electronics,34.22,PayPal,Current
+2023-08-30,C3142,Electronics,170.84,Credit Card,Current
+2023-08-31,C2687,Home & Garden,60.83,PayPal,Current
+2023-08-31,C3689,Clothing,26.21,Credit Card,Current
+2023-08-31,C3521,Home & Garden,111.79,Debit Card,Current
+2023-08-31,C2492,Groceries,32.73,PayPal,Current
+2023-08-31,C2968,Groceries,161.79,Credit Card,Current
+2023-08-31,C2191,Electronics,37.54,Debit Card,Current
+2023-09-01,C2755,Electronics,105.4,Credit Card,Current
+2023-09-01,C4549,Electronics,141.3,Credit Card,Current
+2023-09-01,C4377,Electronics,35.72,Cash,Current
+2023-09-01,C3488,Electronics,139.92,Debit Card,Current
+2023-09-02,C2042,Electronics,212.38,Credit Card,Current
+2023-09-02,C3850,Electronics,468.8,Debit Card,Current
+2023-09-02,C4129,Clothing,34.02,Credit Card,Current
+2023-09-02,C3521,Groceries,29.99,PayPal,Current
+2023-09-02,C4734,Groceries,1282.8,PayPal,Current
+2023-09-03,C3214,Home & Garden,494.63,PayPal,Current
+2023-09-03,C4350,Electronics,217.65,Debit Card,Current
+2023-09-03,C3939,Clothing,76.74,Debit Card,Current
+2023-09-03,C4691,Electronics,158.64,Cash,Current
+2023-09-03,C2391,Clothing,61.86,Credit Card,Current
+2023-09-03,C4320,Clothing,284.93,PayPal,Current
+2023-09-04,C2932,Electronics,113.44,Credit Card,Current
+2023-09-04,C4639,Electronics,161.58,Credit Card,Current
+2023-09-04,C3990,Electronics,287.41,Credit Card,Current
+2023-09-04,C4933,Electronics,106.08,PayPal,Current
+2023-09-05,C1073,Groceries,149.26,PayPal,Current
+2023-09-05,C3299,Electronics,46.02,PayPal,Current
+2023-09-05,C1968,Clothing,400.69,Cash,Current
+2023-09-06,C2390,Home & Garden,108.17,Credit Card,Current
+2023-09-06,C1478,Groceries,180.38,Debit Card,Current
+2023-09-06,C1677,Electronics,21.76,PayPal,Current
+2023-09-06,C4115,Home & Garden,43.1,Debit Card,Current
+2023-09-06,C1418,Electronics,154.86,PayPal,Current
+2023-09-07,C1313,Electronics,41.46,Credit Card,Current
+2023-09-07,C2659,Electronics,29.96,Credit Card,Current
+2023-09-07,C4625,Electronics,31.04,PayPal,Current
+2023-09-07,C1702,Electronics,114.67,Debit Card,Current
+2023-09-07,C1636,Electronics,55.45,Credit Card,Current
+2023-09-07,C3941,Groceries,194.72,PayPal,Current
+2023-09-07,C3415,Groceries,45.71,PayPal,Current
+2023-09-08,C3044,Electronics,79.81,PayPal,Current
+2023-09-08,C4440,Clothing,603.42,PayPal,Current
+2023-09-08,C3202,Electronics,165.94,Debit Card,Current
+2023-09-08,C1306,Home & Garden,266.32,Debit Card,Current
+2023-09-08,C4134,Clothing,341.28,Debit Card,Current
+2023-09-08,C3497,Electronics,35.08,Credit Card,Current
+2023-09-08,C1982,Clothing,77.39,Credit Card,Current
+2023-09-09,C4802,Electronics,82.42,PayPal,Current
+2023-09-09,C4636,Groceries,92.93,PayPal,Current
+2023-09-09,C4861,Electronics,792.07,Debit Card,Current
+2023-09-09,C1880,Electronics,16.2,Credit Card,Current
+2023-09-09,C4336,Electronics,51.25,Credit Card,Current
+2023-09-09,C2542,Electronics,120.4,Credit Card,Current
+2023-09-09,C3264,Clothing,135.78,Credit Card,Current
+2023-09-09,C3180,Electronics,166.9,Credit Card,Current
+2023-09-09,C2104,Electronics,133.45,PayPal,Current
+2023-09-10,C3738,Groceries,109.24,Credit Card,Current
+2023-09-10,C4663,Electronics,154.25,PayPal,Current
+2023-09-10,C3782,Electronics,293.48,Debit Card,Current
+2023-09-10,C2226,Electronics,205.14,Credit Card,Current
+2023-09-10,C4216,Electronics,223.93,PayPal,Current
+2023-09-10,C1102,Electronics,235.86,PayPal,Current
+2023-09-11,C2230,Home & Garden,113.56,Debit Card,Current
+2023-09-11,C1048,Clothing,58.19,Debit Card,Current
+2023-09-11,C1847,Clothing,697.0,Debit Card,Current
+2023-09-11,C1664,Electronics,167.65,Credit Card,Current
+2023-09-11,C2191,Electronics,46.93,Credit Card,Current
+2023-09-11,C3400,Electronics,116.08,Credit Card,Current
+2023-09-12,C1258,Electronics,28.69,Credit Card,Current
+2023-09-12,C1628,Electronics,848.36,Credit Card,Current
+2023-09-12,C2173,Electronics,10.14,Debit Card,Current
+2023-09-12,C4438,Clothing,277.84,Debit Card,Current
+2023-09-12,C1229,Clothing,72.34,PayPal,Current
+2023-09-12,C1636,Clothing,416.78,PayPal,Current
+2023-09-12,C4587,Electronics,36.05,Debit Card,Current
+2023-09-12,C2036,Electronics,211.91,Debit Card,Current
+2023-09-12,C1403,Electronics,10.59,Credit Card,Current
+2023-09-12,C1845,Electronics,105.43,Credit Card,Current
+2023-09-13,C1041,Electronics,77.93,PayPal,Current
+2023-09-13,C1544,Electronics,134.92,PayPal,Current
+2023-09-13,C2013,Clothing,150.9,PayPal,Current
+2023-09-13,C2701,Home & Garden,244.72,Debit Card,Current
+2023-09-13,C4064,Clothing,240.33,Cash,Current
+2023-09-13,C4578,Electronics,26.75,PayPal,Current
+2023-09-13,C2065,Electronics,181.1,Cash,Current
+2023-09-14,C3463,Electronics,6.31,Credit Card,Current
+2023-09-14,C3920,Electronics,72.49,Credit Card,Current
+2023-09-14,C3156,Groceries,12.49,PayPal,Current
+2023-09-15,C4397,Electronics,390.96,PayPal,Current
+2023-09-15,C4383,Electronics,98.71,PayPal,Current
+2023-09-15,C3584,Electronics,20.21,Debit Card,Current
+2023-09-15,C1218,Home & Garden,165.19,PayPal,Current
+2023-09-16,C2216,Electronics,177.64,Credit Card,Current
+2023-09-16,C4392,Groceries,148.13,Debit Card,Current
+2023-09-16,C3063,Clothing,164.35,Credit Card,Current
+2023-09-16,C1230,Home & Garden,534.14,Cash,Current
+2023-09-16,C2649,Electronics,82.34,Debit Card,Current
+2023-09-16,C3833,Groceries,288.45,Debit Card,Current
+2023-09-16,C3540,Electronics,38.41,Credit Card,Current
+2023-09-16,C3187,Electronics,25.99,PayPal,Current
+2023-09-16,C2439,Clothing,208.49,Credit Card,Current
+2023-09-17,C2917,Books,408.33,PayPal,Current
+2023-09-17,C4535,Electronics,40.13,Debit Card,Current
+2023-09-17,C1502,Clothing,49.44,PayPal,Current
+2023-09-17,C4925,Electronics,163.73,Credit Card,Current
+2023-09-17,C2158,Electronics,50.47,Debit Card,Current
+2023-09-17,C4936,Clothing,100.79,Credit Card,Current
+2023-09-17,C4309,Electronics,18.16,Debit Card,Current
+2023-09-17,C2847,Groceries,75.34,Credit Card,Current
+2023-09-17,C4682,Electronics,67.18,Credit Card,Current
+2023-09-17,C1155,Electronics,73.91,PayPal,Current
+2023-09-17,C1855,Groceries,240.77,Credit Card,Current
+2023-09-18,C4681,Electronics,265.92,PayPal,Current
+2023-09-18,C4230,Clothing,120.36,PayPal,Current
+2023-09-18,C2101,Home & Garden,38.7,PayPal,Current
+2023-09-18,C2312,Electronics,22.32,Debit Card,Current
+2023-09-18,C1848,Groceries,62.62,PayPal,Current
+2023-09-18,C4057,Home & Garden,32.73,Credit Card,Current
+2023-09-19,C4189,Electronics,49.07,Debit Card,Current
+2023-09-19,C2130,Clothing,109.1,Credit Card,Current
+2023-09-19,C2860,Electronics,66.41,Debit Card,Current
+2023-09-19,C2211,Electronics,211.3,PayPal,Current
+2023-09-19,C4942,Electronics,669.87,Cash,Current
+2023-09-19,C3475,Home & Garden,37.08,PayPal,Current
+2023-09-20,C4992,Groceries,111.9,Credit Card,Current
+2023-09-20,C2137,Electronics,136.56,PayPal,Current
+2023-09-20,C1126,Electronics,308.25,Debit Card,Current
+2023-09-20,C1276,Groceries,40.62,Credit Card,Current
+2023-09-20,C4209,Electronics,78.53,PayPal,Current
+2023-09-20,C2143,Electronics,107.65,PayPal,Current
+2023-09-20,C3881,Clothing,26.16,Debit Card,Current
+2023-09-20,C1639,Groceries,210.19,PayPal,Current
+2023-09-20,C1969,Home & Garden,63.37,Credit Card,Current
+2023-09-20,C4308,Electronics,280.75,Debit Card,Current
+2023-09-21,C2244,Electronics,51.76,Credit Card,Current
+2023-09-21,C4993,Electronics,68.06,Credit Card,Current
+2023-09-21,C3084,Groceries,103.31,Credit Card,Current
+2023-09-21,C4098,Home & Garden,54.75,Credit Card,Current
+2023-09-22,C3607,Electronics,189.7,Credit Card,Current
+2023-09-22,C2625,Electronics,152.65,PayPal,Current
+2023-09-22,C4937,Clothing,58.42,Debit Card,Current
+2023-09-22,C3790,Groceries,71.98,PayPal,Current
+2023-09-22,C2131,Electronics,82.48,PayPal,Current
+2023-09-22,C3550,Clothing,197.24,Cash,Current
+2023-09-22,C4848,Groceries,303.29,Debit Card,Current
+2023-09-23,C2207,Electronics,41.35,Credit Card,Current
+2023-09-23,C1535,Electronics,94.03,Credit Card,Current
+2023-09-23,C4749,Electronics,211.03,Credit Card,Current
+2023-09-23,C3322,Electronics,126.86,Credit Card,Current
+2023-09-23,C1899,Electronics,126.13,Credit Card,Current
+2023-09-23,C3205,Electronics,106.77,Credit Card,Current
+2023-09-23,C4151,Electronics,91.69,Debit Card,Current
+2023-09-23,C1491,Clothing,56.67,Credit Card,Current
+2023-09-23,C1727,Electronics,81.66,Credit Card,Current
+2023-09-24,C4727,Home & Garden,171.4,PayPal,Current
+2023-09-24,C3659,Electronics,64.7,Credit Card,Current
+2023-09-24,C4052,Electronics,374.42,Debit Card,Current
+2023-09-25,C2365,Electronics,36.26,PayPal,Current
+2023-09-25,C3728,Electronics,166.63,Debit Card,Current
+2023-09-25,C1196,Electronics,84.93,Debit Card,Current
+2023-09-25,C2244,Groceries,432.82,Credit Card,Current
+2023-09-25,C3867,Clothing,30.34,Credit Card,Current
+2023-09-25,C1325,Electronics,44.55,Credit Card,Current
+2023-09-25,C1787,Home & Garden,117.15,Credit Card,Current
+2023-09-25,C2959,Electronics,56.02,Credit Card,Current
+2023-09-25,C4634,Electronics,529.32,Credit Card,Current
+2023-09-25,C4097,Electronics,15.36,Debit Card,Current
+2023-09-25,C2860,Clothing,77.69,Credit Card,Current
+2023-09-26,C1428,Electronics,104.37,Debit Card,Current
+2023-09-26,C4670,Electronics,57.58,Debit Card,Current
+2023-09-26,C1067,Electronics,76.58,Credit Card,Current
+2023-09-26,C1501,Clothing,152.07,Debit Card,Current
+2023-09-26,C3725,Electronics,149.83,PayPal,Current
+2023-09-26,C2872,Clothing,110.89,PayPal,Current
+2023-09-27,C4592,Electronics,217.08,PayPal,Current
+2023-09-27,C3958,Electronics,48.62,Debit Card,Current
+2023-09-27,C3003,Clothing,225.83,Debit Card,Current
+2023-09-27,C3569,Books,306.3,Credit Card,Current
+2023-09-27,C4395,Clothing,136.67,Credit Card,Current
+2023-09-27,C3479,Groceries,78.51,Credit Card,Current
+2023-09-28,C1716,Electronics,87.96,Debit Card,Current
+2023-09-28,C4046,Books,233.03,Debit Card,Current
+2023-09-28,C4961,Electronics,65.55,Credit Card,Current
+2023-09-28,C3997,Clothing,64.37,Debit Card,Current
+2023-09-28,C4718,Home & Garden,183.45,Credit Card,Current
+2023-09-28,C2929,Electronics,186.62,Credit Card,Current
+2023-09-29,C1356,Electronics,48.36,PayPal,Current
+2023-09-29,C1638,Groceries,76.23,Credit Card,Current
+2023-09-29,C1989,Clothing,24.57,PayPal,Current
+2023-09-29,C2007,Electronics,23.29,Credit Card,Current
+2023-09-30,C2607,Clothing,43.67,PayPal,Current
+2023-09-30,C3590,Home & Garden,233.25,PayPal,Current
+2023-09-30,C2868,Electronics,164.57,PayPal,Current
+2023-10-01,C4594,Home & Garden,465.79,PayPal,Current
+2023-10-01,C4161,Electronics,216.21,Credit Card,Current
+2023-10-01,C2410,Home & Garden,118.51,Credit Card,Current
+2023-10-01,C3156,Groceries,220.1,PayPal,Current
+2023-10-02,C1503,Home & Garden,384.34,PayPal,Current
+2023-10-02,C3731,Clothing,31.3,Credit Card,Current
+2023-10-02,C1372,Electronics,31.34,PayPal,Current
+2023-10-02,C1441,Electronics,457.57,PayPal,Current
+2023-10-03,C4203,Electronics,118.35,PayPal,Current
+2023-10-03,C2848,Electronics,70.51,Debit Card,Current
+2023-10-04,C2371,Electronics,65.91,Credit Card,Current
+2023-10-04,C2643,Books,61.42,PayPal,Current
+2023-10-04,C2930,Electronics,101.55,Debit Card,Current
+2023-10-04,C2966,Clothing,656.99,PayPal,Current
+2023-10-04,C2656,Electronics,371.01,Credit Card,Current
+2023-10-04,C3284,Electronics,177.87,Cash,Current
+2023-10-05,C4557,Electronics,264.36,Debit Card,Current
+2023-10-05,C3379,Home & Garden,75.21,PayPal,Current
+2023-10-05,C4660,Electronics,43.76,Cash,Current
+2023-10-05,C4619,Electronics,16.3,PayPal,Current
+2023-10-05,C3856,Clothing,201.0,Credit Card,Current
+2023-10-05,C4854,Electronics,21.36,Debit Card,Current
+2023-10-05,C1757,Books,48.54,PayPal,Current
+2023-10-05,C1709,Electronics,174.27,PayPal,Current
+2023-10-06,C2553,Home & Garden,49.17,Debit Card,Current
+2023-10-06,C4406,Electronics,113.86,Credit Card,Current
+2023-10-06,C2789,Clothing,30.05,Cash,Current
+2023-10-06,C1188,Electronics,188.44,Debit Card,Current
+2023-10-06,C1209,Electronics,110.51,Credit Card,Current
+2023-10-06,C4497,Groceries,250.01,Credit Card,Current
+2023-10-06,C4429,Clothing,123.33,Credit Card,Current
+2023-10-07,C3911,Home & Garden,40.43,Credit Card,Current
+2023-10-07,C3451,Electronics,126.26,PayPal,Current
+2023-10-07,C3758,Electronics,79.65,PayPal,Current
+2023-10-07,C1767,Clothing,214.03,Debit Card,Current
+2023-10-07,C3901,Electronics,82.78,Debit Card,Current
+2023-10-07,C4875,Clothing,196.83,PayPal,Current
+2023-10-07,C1678,Electronics,223.61,Debit Card,Current
+2023-10-07,C4632,Electronics,105.02,Debit Card,Current
+2023-10-08,C2114,Clothing,120.09,Credit Card,Current
+2023-10-08,C4728,Home & Garden,171.64,PayPal,Current
+2023-10-08,C1206,Clothing,112.36,PayPal,Current
+2023-10-08,C4385,Groceries,115.14,Debit Card,Current
+2023-10-08,C1815,Home & Garden,40.83,PayPal,Current
+2023-10-08,C2582,Electronics,132.38,Credit Card,Current
+2023-10-08,C1573,Groceries,111.9,Debit Card,Current
+2023-10-09,C1877,Clothing,42.85,Debit Card,Current
+2023-10-09,C1666,Home & Garden,114.91,PayPal,Current
+2023-10-09,C3102,Electronics,84.11,PayPal,Current
+2023-10-09,C4339,Electronics,45.43,Credit Card,Current
+2023-10-09,C4647,Electronics,33.36,PayPal,Current
+2023-10-10,C4155,Electronics,77.57,PayPal,Current
+2023-10-11,C3682,Electronics,45.39,PayPal,Current
+2023-10-11,C2986,Electronics,42.07,Debit Card,Current
+2023-10-11,C2467,Electronics,44.29,Credit Card,Current
+2023-10-11,C1688,Books,33.5,Credit Card,Current
+2023-10-11,C4491,Home & Garden,431.74,Credit Card,Current
+2023-10-11,C2993,Electronics,2538.99,Cash,Current
+2023-10-12,C2065,Home & Garden,304.94,PayPal,Current
+2023-10-12,C1068,Electronics,219.07,PayPal,Current
+2023-10-12,C2443,Clothing,20.87,Credit Card,Current
+2023-10-13,C2812,Electronics,21.29,PayPal,Current
+2023-10-13,C3376,Home & Garden,321.35,PayPal,Current
+2023-10-13,C1225,Electronics,116.94,Debit Card,Current
+2023-10-13,C1432,Electronics,82.02,Debit Card,Current
+2023-10-13,C1989,Electronics,39.36,PayPal,Current
+2023-10-13,C3243,Groceries,230.49,PayPal,Current
+2023-10-13,C4934,Electronics,281.13,Debit Card,Current
+2023-10-13,C2552,Electronics,26.58,PayPal,Current
+2023-10-14,C2724,Groceries,184.3,Credit Card,Current
+2023-10-14,C1706,Electronics,112.57,PayPal,Current
+2023-10-14,C2105,Groceries,35.52,Credit Card,Current
+2023-10-14,C2125,Groceries,88.28,Debit Card,Current
+2023-10-14,C2947,Groceries,79.39,Cash,Current
+2023-10-14,C2961,Home & Garden,132.07,Credit Card,Current
+2023-10-14,C1125,Electronics,90.09,PayPal,Current
+2023-10-14,C2992,Home & Garden,47.71,PayPal,Current
+2023-10-15,C2388,Home & Garden,380.72,Debit Card,Current
+2023-10-15,C2928,Electronics,275.89,PayPal,Current
+2023-10-15,C1574,Groceries,40.22,Debit Card,Current
+2023-10-15,C1516,Clothing,165.42,Credit Card,Current
+2023-10-15,C3543,Clothing,49.12,PayPal,Current
+2023-10-15,C2969,Electronics,70.64,Debit Card,Current
+2023-10-16,C1446,Electronics,72.36,PayPal,Current
+2023-10-16,C2081,Electronics,86.73,Credit Card,Current
+2023-10-16,C3048,Electronics,72.23,Debit Card,Current
+2023-10-16,C3777,Electronics,98.81,Credit Card,Current
+2023-10-16,C1681,Clothing,197.94,Debit Card,Current
+2023-10-17,C4699,Electronics,198.96,PayPal,Current
+2023-10-17,C1918,Home & Garden,219.73,Credit Card,Current
+2023-10-17,C4149,Home & Garden,286.87,Credit Card,Current
+2023-10-17,C2755,Electronics,121.28,Credit Card,Current
+2023-10-17,C2832,Electronics,116.5,Credit Card,Current
+2023-10-17,C4557,Home & Garden,111.55,Credit Card,Current
+2023-10-18,C2396,Electronics,30.77,PayPal,Current
+2023-10-18,C2820,Clothing,222.8,Cash,Current
+2023-10-18,C2601,Groceries,68.63,PayPal,Current
+2023-10-18,C1835,Groceries,43.12,Debit Card,Current
+2023-10-18,C3440,Clothing,17.94,PayPal,Current
+2023-10-18,C4270,Clothing,14.44,PayPal,Current
+2023-10-18,C3817,Electronics,580.15,PayPal,Current
+2023-10-19,C3964,Electronics,41.73,Credit Card,Current
+2023-10-19,C2334,Groceries,296.78,Credit Card,Current
+2023-10-19,C2193,Electronics,423.42,Credit Card,Current
+2023-10-20,C4515,Electronics,32.23,PayPal,Current
+2023-10-20,C4337,Electronics,87.75,Credit Card,Current
+2023-10-20,C2216,Home & Garden,327.39,Credit Card,Current
+2023-10-20,C2962,Home & Garden,62.27,Debit Card,Current
+2023-10-20,C4460,Home & Garden,107.87,Credit Card,Current
+2023-10-20,C4765,Clothing,114.57,Credit Card,Current
+2023-10-20,C1931,Clothing,263.47,PayPal,Current
+2023-10-21,C3901,Groceries,212.98,Debit Card,Current
+2023-10-21,C1722,Electronics,41.65,Debit Card,Current
+2023-10-21,C1528,Electronics,7.55,Credit Card,Current
+2023-10-21,C2520,Books,132.04,Credit Card,Current
+2023-10-22,C1472,Electronics,77.46,Debit Card,Current
+2023-10-22,C4282,Home & Garden,65.97,Debit Card,Current
+2023-10-22,C1593,Groceries,174.23,Debit Card,Current
+2023-10-22,C2689,Electronics,56.06,PayPal,Current
+2023-10-22,C4217,Clothing,109.25,Debit Card,Current
+2023-10-23,C3372,Electronics,81.8,PayPal,Current
+2023-10-23,C4114,Electronics,147.91,PayPal,Current
+2023-10-23,C1615,Home & Garden,55.48,PayPal,Current
+2023-10-23,C1151,Electronics,68.46,Credit Card,Current
+2023-10-23,C1420,Electronics,71.61,Debit Card,Current
+2023-10-24,C2401,Books,29.79,PayPal,Current
+2023-10-24,C3268,Electronics,116.66,Cash,Current
+2023-10-24,C2080,Electronics,23.81,Debit Card,Current
+2023-10-24,C2556,Clothing,69.88,Credit Card,Current
+2023-10-24,C3424,Electronics,114.07,PayPal,Current
+2023-10-25,C4172,Electronics,93.3,Credit Card,Current
+2023-10-25,C3262,Electronics,122.42,PayPal,Current
+2023-10-25,C2580,Home & Garden,115.91,Debit Card,Current
+2023-10-25,C1834,Clothing,217.22,Debit Card,Current
+2023-10-25,C2443,Clothing,151.79,Credit Card,Current
+2023-10-25,C4297,Clothing,45.76,Credit Card,Current
+2023-10-25,C2598,Electronics,130.23,Debit Card,Current
+2023-10-25,C1987,Books,158.35,PayPal,Current
+2023-10-26,C3442,Electronics,43.39,Cash,Current
+2023-10-26,C2787,Electronics,244.8,Debit Card,Current
+2023-10-26,C1753,Home & Garden,198.49,PayPal,Current
+2023-10-27,C3541,Electronics,68.75,PayPal,Current
+2023-10-27,C3658,Electronics,98.15,PayPal,Current
+2023-10-27,C1947,Clothing,40.27,Debit Card,Current
+2023-10-27,C3650,Groceries,60.13,Credit Card,Current
+2023-10-27,C4428,Clothing,38.79,Debit Card,Current
+2023-10-27,C4285,Groceries,353.55,Credit Card,Current
+2023-10-28,C4832,Electronics,65.89,Credit Card,Current
+2023-10-28,C3429,Electronics,123.49,Credit Card,Current
+2023-10-28,C2570,Electronics,242.79,PayPal,Current
+2023-10-28,C4905,Electronics,158.17,PayPal,Current
+2023-10-28,C1258,Electronics,60.16,PayPal,Current
+2023-10-29,C4801,Electronics,84.48,Debit Card,Current
+2023-10-29,C1170,Groceries,109.87,Cash,Current
+2023-10-29,C4580,Home & Garden,74.0,Credit Card,Current
+2023-10-29,C4382,Electronics,34.95,PayPal,Current
+2023-10-29,C3420,Electronics,30.58,Cash,Current
+2023-10-29,C3284,Home & Garden,58.65,Cash,Current
+2023-10-29,C4040,Home & Garden,151.67,Debit Card,Current
+2023-10-30,C3973,Books,90.45,Debit Card,Current
+2023-10-30,C1771,Electronics,103.04,PayPal,Current
+2023-10-30,C3603,Clothing,55.14,PayPal,Current
+2023-10-30,C1372,Electronics,44.8,Credit Card,Current
+2023-10-30,C3662,Electronics,64.36,PayPal,Current
+2023-10-30,C4579,Electronics,303.57,Credit Card,Current
+2023-10-30,C2533,Groceries,27.13,PayPal,Current
+2023-10-30,C3094,Home & Garden,39.08,Credit Card,Current
+2023-10-31,C4275,Clothing,158.04,Credit Card,Current
+2023-10-31,C4367,Electronics,402.85,PayPal,Current
+2023-10-31,C1470,Home & Garden,157.42,PayPal,Current
+2023-10-31,C4848,Electronics,38.61,PayPal,Current
+2023-10-31,C1675,Electronics,127.11,Debit Card,Current
+2023-11-01,C2115,Groceries,36.48,Cash,Current
+2023-11-01,C1688,Groceries,1138.67,Debit Card,Current
+2023-11-01,C2094,Electronics,251.46,PayPal,Current
+2023-11-02,C1654,Electronics,103.35,Credit Card,Current
+2023-11-02,C1572,Electronics,71.32,PayPal,Current
+2023-11-02,C4875,Electronics,71.88,Credit Card,Current
+2023-11-02,C3436,Electronics,129.03,Credit Card,Current
+2023-11-02,C1907,Electronics,381.51,Credit Card,Current
+2023-11-02,C4185,Electronics,425.06,PayPal,Current
+2023-11-02,C4117,Clothing,76.88,Credit Card,Current
+2023-11-02,C1433,Clothing,54.46,PayPal,Current
+2023-11-02,C3021,Clothing,80.38,Credit Card,Current
+2023-11-03,C1587,Electronics,63.7,Credit Card,Current
+2023-11-03,C1054,Electronics,251.61,PayPal,Current
+2023-11-03,C1306,Electronics,18.91,PayPal,Current
+2023-11-03,C4078,Electronics,244.57,Debit Card,Current
+2023-11-03,C3583,Books,13.6,Credit Card,Current
+2023-11-03,C1821,Home & Garden,118.21,PayPal,Current
+2023-11-03,C1247,Electronics,276.43,Debit Card,Current
+2023-11-03,C3475,Electronics,31.75,PayPal,Current
+2023-11-03,C2721,Electronics,585.37,Credit Card,Current
+2023-11-04,C4724,Books,46.31,PayPal,Current
+2023-11-04,C4127,Electronics,41.35,Cash,Current
+2023-11-04,C2729,Home & Garden,108.8,Cash,Current
+2023-11-04,C2574,Electronics,303.83,PayPal,Current
+2023-11-04,C2908,Clothing,44.5,PayPal,Current
+2023-11-04,C4670,Electronics,35.9,Debit Card,Current
+2023-11-04,C1501,Electronics,127.5,Credit Card,Current
+2023-11-05,C2903,Electronics,48.7,Credit Card,Current
+2023-11-05,C3755,Books,200.71,Debit Card,Current
+2023-11-05,C4020,Groceries,185.02,PayPal,Current
+2023-11-05,C3426,Electronics,211.48,Debit Card,Current
+2023-11-06,C3261,Clothing,27.05,PayPal,Current
+2023-11-06,C1084,Electronics,135.67,PayPal,Current
+2023-11-06,C1959,Clothing,196.3,Cash,Current
+2023-11-06,C1803,Electronics,278.69,PayPal,Current
+2023-11-06,C3169,Electronics,129.45,PayPal,Current
+2023-11-06,C2789,Books,187.22,PayPal,Current
+2023-11-06,C2421,Groceries,90.97,Credit Card,Current
+2023-11-07,C1282,Clothing,84.14,Credit Card,Current
+2023-11-07,C2502,Home & Garden,119.07,PayPal,Current
+2023-11-07,C3228,Groceries,40.36,Cash,Current
+2023-11-07,C1819,Electronics,118.77,Credit Card,Current
+2023-11-07,C1997,Books,92.76,Debit Card,Current
+2023-11-07,C3556,Electronics,36.82,PayPal,Current
+2023-11-07,C1959,Electronics,677.62,Credit Card,Current
+2023-11-07,C3824,Electronics,89.89,Credit Card,Current
+2023-11-07,C4965,Clothing,118.11,PayPal,Current
+2023-11-07,C2074,Clothing,63.82,PayPal,Current
+2023-11-08,C4110,Clothing,133.99,PayPal,Current
+2023-11-08,C4863,Electronics,61.86,Debit Card,Current
+2023-11-08,C3785,Home & Garden,184.65,PayPal,Current
+2023-11-08,C3419,Books,99.0,PayPal,Current
+2023-11-08,C4039,Electronics,129.18,Credit Card,Current
+2023-11-08,C4588,Home & Garden,97.08,PayPal,Current
+2023-11-08,C2168,Electronics,12.97,Debit Card,Current
+2023-11-08,C1838,Clothing,50.98,PayPal,Current
+2023-11-09,C1428,Electronics,43.3,Debit Card,Current
+2023-11-09,C2345,Electronics,33.61,PayPal,Current
+2023-11-09,C4407,Clothing,36.03,Credit Card,Current
+2023-11-09,C4007,Clothing,516.02,Debit Card,Current
+2023-11-09,C3793,Electronics,197.54,PayPal,Current
+2023-11-10,C2015,Home & Garden,67.72,Debit Card,Current
+2023-11-11,C3883,Electronics,243.16,Credit Card,Current
+2023-11-11,C4146,Electronics,148.75,Debit Card,Current
+2023-11-11,C1657,Electronics,116.42,PayPal,Current
+2023-11-11,C1025,Electronics,867.49,PayPal,Current
+2023-11-11,C1255,Books,83.28,Credit Card,Current
+2023-11-11,C1862,Clothing,261.12,PayPal,Current
+2023-11-11,C1364,Electronics,54.56,Debit Card,Current
+2023-11-11,C4748,Groceries,374.81,Debit Card,Current
+2023-11-11,C4974,Groceries,95.71,PayPal,Current
+2023-11-11,C3374,Home & Garden,185.78,Credit Card,Current
+2023-11-11,C2449,Electronics,45.85,Debit Card,Current
+2023-11-12,C3042,Home & Garden,253.54,Debit Card,Current
+2023-11-12,C3970,Electronics,186.81,Credit Card,Current
+2023-11-12,C2607,Electronics,67.25,Debit Card,Current
+2023-11-12,C4534,Electronics,217.14,PayPal,Current
+2023-11-12,C4480,Home & Garden,14.63,Credit Card,Current
+2023-11-12,C3647,Electronics,229.83,PayPal,Current
+2023-11-12,C1181,Electronics,286.44,PayPal,Current
+2023-11-13,C3057,Home & Garden,165.8,Debit Card,Current
+2023-11-13,C2176,Electronics,119.31,PayPal,Current
+2023-11-13,C4673,Clothing,61.19,Credit Card,Current
+2023-11-14,C4140,Clothing,102.07,Debit Card,Current
+2023-11-14,C4814,Electronics,63.11,Credit Card,Current
+2023-11-14,C3581,Groceries,224.84,Debit Card,Current
+2023-11-14,C4332,Home & Garden,199.48,Credit Card,Current
+2023-11-14,C3400,Home & Garden,230.27,Credit Card,Current
+2023-11-15,C1548,Home & Garden,63.4,PayPal,Current
+2023-11-16,C2448,Electronics,375.0,Credit Card,Current
+2023-11-16,C4055,Clothing,38.32,Credit Card,Current
+2023-11-17,C3132,Books,73.9,PayPal,Current
+2023-11-17,C3558,Electronics,237.68,PayPal,Current
+2023-11-17,C3170,Groceries,240.49,PayPal,Current
+2023-11-17,C3705,Electronics,102.16,Credit Card,Current
+2023-11-17,C2323,Home & Garden,60.89,PayPal,Current
+2023-11-18,C4815,Clothing,57.67,Debit Card,Current
+2023-11-18,C1066,Electronics,433.34,Cash,Current
+2023-11-18,C4969,Books,194.72,PayPal,Current
+2023-11-18,C1990,Groceries,52.79,Credit Card,Current
+2023-11-19,C2614,Electronics,286.05,Cash,Current
+2023-11-19,C1070,Electronics,1004.81,PayPal,Current
+2023-11-19,C3558,Electronics,16.62,Credit Card,Current
+2023-11-20,C3553,Electronics,42.4,PayPal,Current
+2023-11-20,C4238,Clothing,24.12,PayPal,Current
+2023-11-20,C3226,Electronics,100.26,Credit Card,Current
+2023-11-20,C4174,Groceries,65.16,Credit Card,Current
+2023-11-21,C1164,Clothing,240.74,Debit Card,Current
+2023-11-21,C2419,Groceries,145.34,PayPal,Current
+2023-11-21,C1749,Clothing,152.59,Credit Card,Current
+2023-11-21,C3416,Clothing,64.83,PayPal,Current
+2023-11-21,C1048,Clothing,218.08,Debit Card,Current
+2023-11-21,C2847,Electronics,391.86,Credit Card,Current
+2023-11-22,C3944,Groceries,56.73,Credit Card,Current
+2023-11-22,C1280,Electronics,110.32,PayPal,Current
+2023-11-22,C1179,Electronics,98.93,Cash,Current
+2023-11-22,C3662,Electronics,87.29,Credit Card,Current
+2023-11-22,C1524,Clothing,75.57,PayPal,Current
+2023-11-22,C2848,Clothing,120.36,Credit Card,Current
+2023-11-23,C2302,Electronics,56.35,Credit Card,Current
+2023-11-23,C2510,Home & Garden,22.94,Credit Card,Current
+2023-11-23,C2425,Clothing,72.17,Credit Card,Current
+2023-11-23,C2417,Electronics,142.34,Debit Card,Current
+2023-11-23,C3131,Electronics,69.87,Credit Card,Current
+2023-11-23,C2706,Electronics,55.41,Credit Card,Current
+2023-11-23,C1100,Electronics,43.01,PayPal,Current
+2023-11-23,C4757,Electronics,466.66,PayPal,Current
+2023-11-23,C3318,Electronics,21.39,Debit Card,Current
+2023-11-23,C1018,Electronics,69.64,PayPal,Current
+2023-11-23,C2219,Electronics,266.88,PayPal,Current
+2023-11-24,C4271,Groceries,113.38,PayPal,Current
+2023-11-24,C3061,Clothing,77.11,Credit Card,Current
+2023-11-24,C1214,Home & Garden,24.95,Credit Card,Current
+2023-11-24,C2013,Electronics,204.35,Credit Card,Current
+2023-11-24,C1177,Clothing,206.86,Credit Card,Current
+2023-11-25,C3089,Electronics,92.23,Credit Card,Current
+2023-11-25,C2075,Home & Garden,51.91,Debit Card,Current
+2023-11-25,C3529,Clothing,148.64,Credit Card,Current
+2023-11-25,C1172,Electronics,114.77,Credit Card,Current
+2023-11-26,C4417,Electronics,113.08,PayPal,Current
+2023-11-26,C2604,Clothing,101.26,Debit Card,Current
+2023-11-26,C1276,Clothing,124.29,Credit Card,Current
+2023-11-26,C1437,Electronics,41.0,Credit Card,Current
+2023-11-26,C2465,Books,369.35,Debit Card,Current
+2023-11-26,C3508,Electronics,86.98,Credit Card,Current
+2023-11-26,C4681,Electronics,203.32,Credit Card,Current
+2023-11-26,C4482,Electronics,422.33,PayPal,Current
+2023-11-26,C4731,Electronics,155.22,PayPal,Current
+2023-11-27,C1585,Electronics,65.13,Credit Card,Current
+2023-11-28,C3744,Home & Garden,542.9,Cash,Current
+2023-11-28,C4215,Books,337.24,PayPal,Current
+2023-11-28,C2260,Electronics,39.08,Cash,Current
+2023-11-28,C4497,Electronics,36.43,Credit Card,Current
+2023-11-28,C1091,Clothing,132.44,Credit Card,Current
+2023-11-28,C1208,Electronics,203.74,Credit Card,Current
+2023-11-28,C3051,Electronics,21.55,Credit Card,Current
+2023-11-28,C4004,Home & Garden,166.82,Credit Card,Current
+2023-11-28,C1656,Clothing,69.32,PayPal,Current
+2023-11-29,C3867,Electronics,83.52,Credit Card,Current
+2023-11-29,C2093,Electronics,580.95,Debit Card,Current
+2023-11-29,C1579,Books,45.07,Credit Card,Current
+2023-11-29,C4382,Groceries,26.46,PayPal,Current
+2023-11-29,C4622,Clothing,41.49,Cash,Current
+2023-11-29,C3354,Electronics,113.43,Credit Card,Current
+2023-11-30,C1867,Groceries,86.0,Debit Card,Current
+2023-11-30,C1477,Electronics,309.06,PayPal,Current
+2023-11-30,C3058,Electronics,298.87,Debit Card,Current
+2023-11-30,C1744,Electronics,181.95,Credit Card,Current
+2023-11-30,C4832,Electronics,92.39,PayPal,Current
+2023-11-30,C1220,Electronics,26.69,Debit Card,Current
+2023-12-01,C3209,Electronics,133.26,Credit Card,Current
+2023-12-01,C4650,Electronics,110.0,Debit Card,Current
+2023-12-01,C4323,Electronics,242.07,PayPal,Current
+2023-12-01,C2893,Groceries,61.66,PayPal,Current
+2023-12-01,C3443,Groceries,24.1,Debit Card,Current
+2023-12-01,C3180,Clothing,346.43,PayPal,Current
+2023-12-01,C1270,Electronics,333.09,Debit Card,Current
+2023-12-01,C3562,Groceries,101.29,Credit Card,Current
+2023-12-01,C1865,Electronics,52.43,Credit Card,Current
+2023-12-01,C1831,Clothing,92.33,PayPal,Current
+2023-12-01,C4291,Electronics,43.85,Debit Card,Current
+2023-12-02,C1350,Home & Garden,64.12,PayPal,Current
+2023-12-02,C1687,Clothing,116.79,PayPal,Current
+2023-12-02,C4473,Books,342.71,Credit Card,Current
+2023-12-02,C3886,Electronics,171.35,PayPal,Current
+2023-12-02,C2119,Electronics,109.82,Debit Card,Current
+2023-12-03,C4885,Electronics,532.69,Credit Card,Current
+2023-12-03,C1661,Electronics,49.79,Credit Card,Current
+2023-12-03,C4739,Electronics,59.91,Debit Card,Current
+2023-12-04,C2602,Electronics,305.24,PayPal,Current
+2023-12-04,C2053,Electronics,143.17,Credit Card,Current
+2023-12-04,C2986,Electronics,36.44,Debit Card,Current
+2023-12-04,C4932,Clothing,233.3,Debit Card,Current
+2023-12-04,C4686,Clothing,120.32,Credit Card,Current
+2023-12-04,C4438,Electronics,88.29,PayPal,Current
+2023-12-04,C2607,Electronics,112.4,PayPal,Current
+2023-12-04,C4957,Electronics,184.08,Credit Card,Current
+2023-12-04,C1422,Electronics,100.47,Cash,Current
+2023-12-05,C3770,Electronics,46.38,PayPal,Current
+2023-12-05,C4910,Electronics,54.93,Cash,Current
+2023-12-05,C3887,Electronics,78.77,Credit Card,Current
+2023-12-05,C2008,Electronics,166.34,PayPal,Current
+2023-12-06,C1261,Groceries,24.7,Credit Card,Current
+2023-12-06,C4298,Clothing,12.31,Credit Card,Current
+2023-12-07,C1804,Home & Garden,123.93,Debit Card,Current
+2023-12-07,C2733,Clothing,37.1,Credit Card,Current
+2023-12-08,C2189,Clothing,91.04,PayPal,Current
+2023-12-08,C1604,Electronics,90.45,Credit Card,Current
+2023-12-08,C3194,Groceries,54.03,PayPal,Current
+2023-12-08,C1086,Clothing,251.35,Cash,Current
+2023-12-08,C4164,Electronics,134.73,PayPal,Current
+2023-12-08,C3494,Books,61.51,Debit Card,Current
+2023-12-08,C3775,Clothing,42.21,PayPal,Current
+2023-12-09,C4019,Home & Garden,118.47,PayPal,Current
+2023-12-09,C3884,Electronics,47.63,PayPal,Current
+2023-12-09,C2720,Electronics,71.76,Credit Card,Current
+2023-12-09,C3175,Electronics,183.73,Credit Card,Current
+2023-12-11,C4815,Clothing,203.85,Debit Card,Current
+2023-12-11,C1246,Home & Garden,119.39,PayPal,Current
+2023-12-12,C4744,Home & Garden,195.43,PayPal,Current
+2023-12-12,C2027,Electronics,266.39,Cash,Current
+2023-12-12,C2040,Clothing,1030.46,Cash,Current
+2023-12-13,C2489,Electronics,255.25,PayPal,Current
+2023-12-13,C1957,Electronics,49.29,PayPal,Current
+2023-12-13,C1122,Electronics,69.61,Credit Card,Current
+2023-12-13,C4622,Electronics,121.66,Credit Card,Current
+2023-12-13,C2767,Groceries,173.31,PayPal,Current
+2023-12-13,C2320,Books,270.15,PayPal,Current
+2023-12-14,C3258,Home & Garden,70.5,PayPal,Current
+2023-12-14,C3302,Electronics,244.91,Credit Card,Current
+2023-12-15,C3397,Groceries,64.98,Credit Card,Current
+2023-12-15,C3024,Electronics,91.44,PayPal,Current
+2023-12-15,C3718,Electronics,48.96,Credit Card,Current
+2023-12-15,C4407,Groceries,163.62,PayPal,Current
+2023-12-15,C4176,Electronics,68.13,Credit Card,Current
+2023-12-15,C1947,Books,39.6,PayPal,Current
+2023-12-15,C3443,Groceries,187.48,Credit Card,Current
+2023-12-15,C3765,Groceries,26.94,Debit Card,Current
+2023-12-16,C1687,Electronics,93.3,PayPal,Current
+2023-12-16,C1564,Electronics,707.39,PayPal,Current
+2023-12-16,C2388,Groceries,143.74,Credit Card,Current
+2023-12-16,C3869,Groceries,56.31,Credit Card,Current
+2023-12-16,C3718,Electronics,55.99,PayPal,Current
+2023-12-16,C4164,Electronics,97.47,PayPal,Current
+2023-12-17,C2074,Electronics,57.85,Debit Card,Current
+2023-12-17,C1873,Home & Garden,97.37,PayPal,Current
+2023-12-17,C3341,Groceries,63.66,Credit Card,Current
+2023-12-17,C4786,Books,89.68,Credit Card,Current
+2023-12-17,C1282,Electronics,182.05,PayPal,Current
+2023-12-17,C1954,Electronics,195.66,Debit Card,Current
+2023-12-17,C1485,Groceries,499.45,PayPal,Current
+2023-12-18,C4670,Clothing,54.96,Credit Card,Current
+2023-12-18,C1797,Electronics,18.18,PayPal,Current
+2023-12-18,C1892,Groceries,62.9,PayPal,Current
+2023-12-18,C2808,Clothing,75.26,PayPal,Current
+2023-12-18,C2876,Electronics,23.51,Credit Card,Current
+2023-12-18,C4741,Groceries,273.64,Credit Card,Current
+2023-12-19,C1254,Groceries,265.61,Cash,Current
+2023-12-19,C4436,Electronics,46.72,Credit Card,Current
+2023-12-19,C3526,Groceries,23.48,PayPal,Current
+2023-12-19,C1087,Clothing,106.73,Credit Card,Current
+2023-12-19,C2202,Electronics,109.87,PayPal,Current
+2023-12-20,C2204,Electronics,58.99,Credit Card,Current
+2023-12-20,C1413,Electronics,108.11,Credit Card,Current
+2023-12-20,C4666,Books,184.6,Debit Card,Current
+2023-12-20,C1354,Groceries,72.74,Credit Card,Current
+2023-12-21,C2140,Clothing,499.97,Credit Card,Current
+2023-12-21,C4783,Groceries,42.02,PayPal,Current
+2023-12-22,C3480,Electronics,395.1,PayPal,Current
+2023-12-22,C4999,Electronics,156.28,Debit Card,Current
+2023-12-22,C2272,Electronics,137.85,PayPal,Current
+2023-12-22,C1847,Electronics,23.07,PayPal,Current
+2023-12-22,C4626,Electronics,74.44,PayPal,Current
+2023-12-23,C4979,Groceries,74.88,PayPal,Current
+2023-12-23,C2869,Electronics,205.47,PayPal,Current
+2023-12-23,C3441,Electronics,201.02,Credit Card,Current
+2023-12-23,C3309,Groceries,418.11,PayPal,Current
+2023-12-24,C4317,Electronics,129.81,Credit Card,Current
+2023-12-24,C4658,Clothing,80.05,PayPal,Current
+2023-12-24,C3579,Clothing,140.51,Debit Card,Current
+2023-12-24,C2430,Home & Garden,17.78,PayPal,Current
+2023-12-24,C1098,Groceries,96.84,PayPal,Current
+2023-12-24,C1181,Electronics,108.69,Credit Card,Current
+2023-12-24,C3087,Electronics,55.8,Credit Card,Current
+2023-12-25,C4523,Electronics,300.71,PayPal,Current
+2023-12-25,C1825,Clothing,86.6,Debit Card,Current
+2023-12-25,C3427,Clothing,81.87,Debit Card,Current
+2023-12-25,C4555,Electronics,138.08,PayPal,Current
+2023-12-26,C2484,Clothing,105.65,Cash,Current
+2023-12-26,C3868,Electronics,51.2,Cash,Current
+2023-12-26,C1452,Home & Garden,246.68,Credit Card,Current
+2023-12-26,C4476,Electronics,635.57,Cash,Current
+2023-12-26,C4677,Electronics,64.03,Credit Card,Current
+2023-12-26,C2998,Groceries,140.53,Debit Card,Current
+2023-12-26,C4539,Electronics,129.42,PayPal,Current
+2023-12-26,C2070,Electronics,18.13,PayPal,Current
+2023-12-26,C2545,Electronics,275.01,Cash,Current
+2023-12-27,C3879,Electronics,56.35,Credit Card,Current
+2023-12-27,C1838,Clothing,102.93,PayPal,Current
+2023-12-27,C4826,Clothing,284.66,Debit Card,Current
+2023-12-27,C1324,Groceries,112.66,Credit Card,Current
+2023-12-27,C4945,Electronics,289.0,Debit Card,Current
+2023-12-27,C2471,Electronics,135.07,Credit Card,Current
+2023-12-27,C3500,Electronics,233.51,Credit Card,Current

@@ -1,4 +1,4 @@
-﻿"""
+"""
 app.py  —  Consumer Behavior Drift Detection  |  Next-Level Dashboard
 Features: PSI · Wasserstein · Rolling Window · Violin+Box · Sankey ·
 Correlation Heatmap · PDF Export · CSV Upload · Date Picker + Threshold Slider
@@ -299,6 +299,10 @@ def main():
 
     # ── Sidebar ───────────────────────────────────────────────────────────────
     with st.sidebar:
+        st.markdown("### 🧭 Navigation")
+        app_mode = st.radio("App Mode", ["📡 Drift Dashboard", "🔮 Manual Prediction"], label_visibility="collapsed")
+        st.markdown("---")
+        
         st.markdown("### ⚙️ Configuration")
 
         # -- Upload CSVs --
@@ -580,6 +584,47 @@ def main():
         c2.metric("Current",  f"{len(current_df):,}")
         st.caption(f"Baseline: {baseline_df['Date'].min().date()} → {baseline_df['Date'].max().date()}")
         st.caption(f"Current : {current_df['Date'].min().date()} → {current_df['Date'].max().date()}")
+
+    if app_mode == "🔮 Manual Prediction":
+        st.markdown('<div class="section-heading"><span class="sh-icon">🔮</span> Manual Prediction Module</div>',
+                    unsafe_allow_html=True)
+        st.caption("Enter a single transaction's details to predict its Purchase Amount based on the baseline data patterns.")
+
+        with st.form("manual_prediction_form"):
+            pred_col1, pred_col2, pred_col3 = st.columns([2, 2, 1])
+            with pred_col1:
+                all_cat_options = list(baseline_df["Product_Category"].dropna().unique())
+                user_cat = st.selectbox("Product Category", options=all_cat_options, key="pred_cat")
+            with pred_col2:
+                all_pay_options = list(baseline_df["Payment_Method"].dropna().unique())
+                user_pay = st.selectbox("Payment Method", options=all_pay_options, key="pred_pay")
+            with pred_col3:
+                st.markdown("<br>", unsafe_allow_html=True) # align with dropdowns
+                submit_pred = st.form_submit_button("Predict Amount", use_container_width=True)
+
+        if submit_pred:
+            if baseline_df.empty:
+                st.warning("Baseline data is empty. Cannot train prediction model.")
+            else:
+                with st.spinner("Training model & predicting..."):
+                    try:
+                        from prediction_engine import train_and_predict
+                        predicted_amt, expected_std = train_and_predict(baseline_df, user_cat, user_pay)
+                        if predicted_amt is not None:
+                            st.markdown(f"""
+                            <div style="background:{_MET_BG}; border:1px solid {_BOR2}; border-radius:14px; padding:1.2rem 1.5rem; margin-top:0.8rem; text-align:center;">
+                                <div style="font-size:0.8rem; color:{_DIM}; text-transform:uppercase; letter-spacing:0.1em; font-weight:600; margin-bottom:0.3rem;">Predicted Purchase Amount</div>
+                                <div style="font-size:2.2rem; font-family:'IBM Plex Mono',monospace; color:#3A86FF; font-weight:600;">${predicted_amt:.2f}</div>
+                                <div style="font-size:0.85rem; color:{_MID}; margin-top:0.4rem;">
+                                    Expected Range (±1 SD): <b>${predicted_amt - expected_std:.2f}</b> to <b>${predicted_amt + expected_std:.2f}</b>
+                                </div>
+                            </div>
+                            """, unsafe_allow_html=True)
+                        else:
+                            st.error("Not enough baseline data to generate a prediction.")
+                    except Exception as e:
+                        st.error(f"Prediction error: {e}")
+        st.stop()
 
     # ── Run drift detection ───────────────────────────────────────────────────
     with st.spinner("Running drift tests…"):

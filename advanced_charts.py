@@ -669,3 +669,180 @@ def drilldown_distribution(baseline_df, current_df, selected_category=None):
         ),
     ))
     return fig
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ML Drift Charts
+# ─────────────────────────────────────────────────────────────────────────────
+
+def ml_model_comparison_chart(ml_results: dict) -> go.Figure:
+    """Bar chart comparing drift scores from all 3 ML models + ensemble."""
+    models = ["Isolation Forest", "Random Forest", "Gradient Boosting", "Ensemble"]
+    scores = [
+        ml_results["isolation_forest"]["drift_score"],
+        ml_results["random_forest"]["drift_score"],
+        ml_results["gradient_boosting"]["drift_score"],
+        ml_results["ensemble_score"],
+    ]
+    colors_list = [
+        ml_results["isolation_forest"]["color"],
+        ml_results["random_forest"]["color"],
+        ml_results["gradient_boosting"]["color"],
+        ml_results["ensemble_color"],
+    ]
+    auc_labels = [
+        f"Anomaly rate: {ml_results['isolation_forest']['anomaly_rate']:.2%}",
+        f"AUC: {ml_results['random_forest']['auc']:.4f}",
+        f"AUC: {ml_results['gradient_boosting']['auc']:.4f}",
+        f"Score: {ml_results['ensemble_score']:.4f}",
+    ]
+
+    fig = go.Figure(go.Bar(
+        x=models, y=scores,
+        marker=dict(color=colors_list, opacity=0.85,
+                    line=dict(color=BG_PAPER, width=1.5)),
+        text=[f"{s:.3f}" for s in scores],
+        textposition="outside",
+        textfont=dict(size=12, color=TEXT_COLOR),
+        customdata=auc_labels,
+        hovertemplate=(
+            "<b>%{x}</b><br>"
+            "Drift Score: <b>%{y:.4f}</b><br>"
+            "%{customdata}<extra></extra>"
+        ),
+    ))
+    fig.add_hline(y=0.5, line=dict(color="#FFB703", width=1.5, dash="dash"),
+                  annotation_text="Drift threshold (0.5)",
+                  annotation_font=dict(color="#FFB703", size=10))
+    fig.update_layout(**_base_layout(
+        title=_title("ML Model Drift Scores — All Models vs Ensemble"),
+        height=400,
+        yaxis=_axis("Drift Score (0 = stable, 1 = fully drifted)", range=[0, 1.1]),
+        xaxis=_axis(""),
+    ))
+    return fig
+
+
+def ml_feature_importance_chart(ml_results: dict) -> go.Figure:
+    """Grouped bar showing feature importance from RF and GBT."""
+    pf    = ml_results["per_feature"]
+    feats = list(pf.keys())
+    rf_scores  = [pf[f]["drift_score"] for f in feats]
+    rf_aucs    = [pf[f]["auc"] for f in feats]
+    colors_f   = [pf[f]["color"] for f in feats]
+
+    # Also show RF classifier importances
+    rf_imp = ml_results["random_forest"].get("feature_importance", {})
+    gb_imp = ml_results["gradient_boosting"].get("feature_importance", {})
+
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        name="RF Drift Score", x=feats, y=rf_scores,
+        marker=dict(color=colors_f, opacity=0.8),
+        text=[f"{s:.3f}" for s in rf_scores],
+        textposition="outside",
+        hovertemplate="<b>%{x}</b><br>Drift Score: <b>%{y:.4f}</b><br>AUC: <b>" +
+                      "</b><extra></extra>",
+    ))
+    if rf_imp:
+        fig.add_trace(go.Bar(
+            name="RF Feature Weight", x=feats,
+            y=[rf_imp.get(f, 0) for f in feats],
+            marker=dict(color=BASELINE_COLOR, opacity=0.6),
+            hovertemplate="<b>%{x}</b><br>RF Importance: <b>%{y:.4f}</b><extra></extra>",
+        ))
+    if gb_imp:
+        fig.add_trace(go.Bar(
+            name="GBT Feature Weight", x=feats,
+            y=[gb_imp.get(f, 0) for f in feats],
+            marker=dict(color=CURRENT_COLOR, opacity=0.6),
+            hovertemplate="<b>%{x}</b><br>GBT Importance: <b>%{y:.4f}</b><extra></extra>",
+        ))
+
+    fig.update_layout(**_base_layout(
+        title=_title("Feature-Level Drift (per-feature ML classifier AUC)"),
+        height=420,
+        barmode="group",
+        yaxis=_axis("Score"),
+        xaxis=_axis(""),
+    ))
+    return fig
+
+
+def ml_anomaly_score_chart(ml_results: dict, baseline_df, current_df) -> go.Figure:
+    """Scatter of Isolation Forest anomaly scores — baseline vs current."""
+    row_scores = ml_results["isolation_forest"].get("row_scores", None)
+    if row_scores is None or row_scores.empty:
+        fig = go.Figure()
+        fig.update_layout(**_base_layout(title=_title("Anomaly Scores — no data"), height=300))
+        return fig
+
+    for period, color in [("Baseline", BASELINE_COLOR), ("Current", CURRENT_COLOR)]:
+        sub = row_scores[row_scores["period"] == period]
+        fig_data = sub["anomaly_score"].values
+        fig = None  # reset
+
+    fig = go.Figure()
+    for period, color, opacity in [("Baseline", BASELINE_COLOR, 0.5),
+                                    ("Current",  CURRENT_COLOR, 0.8)]:
+        sub = row_scores[row_scores["period"] == period]
+        fig.add_trace(go.Histogram(
+            x=sub["anomaly_score"], name=period,
+            marker=dict(color=color, opacity=opacity,
+                        line=dict(color=BG_PAPER, width=0.5)),
+            nbinsx=40,
+            hovertemplate=f"<b>{period}</b><br>Anomaly Score: <b>%{{x:.3f}}</b><br>Count: <b>%{{y}}</b><extra></extra>",
+        ))
+
+    # Threshold line
+    threshold = row_scores[row_scores["period"]=="Baseline"]["anomaly_score"].quantile(0.95)
+    fig.add_vline(x=threshold, line=dict(color="#EF476F", width=1.5, dash="dash"),
+                  annotation_text="Anomaly threshold (95th pct baseline)",
+                  annotation_font=dict(color="#EF476F", size=10))
+
+    fig.update_layout(**_base_layout(
+        title=_title("Isolation Forest Anomaly Score Distribution"),
+        height=400,
+        barmode="overlay",
+        xaxis=_axis("Anomaly Score (higher = more anomalous)"),
+        yaxis=_axis("Count"),
+        legend=dict(bgcolor="rgba(15,17,23,0.7)", bordercolor=GRID_COLOR,
+                    borderwidth=1, font=dict(color=TEXT_COLOR, size=11)),
+    ))
+    return fig
+
+
+def ml_drift_gauge(ml_results: dict) -> go.Figure:
+    """Gauge showing the ensemble drift score 0-100."""
+    score = ml_results["ensemble_score"] * 100
+    color = ml_results["ensemble_color"]
+    level = ml_results["ensemble_level"]
+
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number+delta",
+        value=round(score, 1),
+        title=dict(text=f"Drift Risk Score<br><span style='font-size:0.85em;color:{color}'>{level}</span>",
+                   font=dict(color=TEXT_COLOR, size=14)),
+        delta=dict(reference=50, increasing=dict(color=DRIFT_COLOR),
+                   decreasing=dict(color=STABLE_COLOR)),
+        gauge=dict(
+            axis=dict(range=[0, 100], tickcolor=TEXT_DIM,
+                      tickfont=dict(color=TEXT_DIM, size=10)),
+            bar=dict(color=color, thickness=0.25),
+            bgcolor=BG_PAPER,
+            bordercolor=GRID_COLOR,
+            steps=[
+                dict(range=[0,  50],  color=_rgba(STABLE_COLOR, 0.12)),
+                dict(range=[50, 70],  color=_rgba("#FFB703", 0.12)),
+                dict(range=[70, 85],  color=_rgba("#FF7B00", 0.12)),
+                dict(range=[85, 100], color=_rgba(DRIFT_COLOR, 0.12)),
+            ],
+            threshold=dict(line=dict(color="#EF476F", width=2), value=70),
+        ),
+        number=dict(suffix="%", font=dict(color=TEXT_COLOR, size=36,
+                                           family="IBM Plex Mono")),
+    ))
+    fig.update_layout(**_base_layout(
+        title=_title("Ensemble ML Drift Risk Gauge"),
+        height=380,
+    ))
+    return fig

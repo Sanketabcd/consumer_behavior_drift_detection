@@ -1,4 +1,4 @@
-"""
+﻿"""
 app.py  —  Consumer Behavior Drift Detection  |  Next-Level Dashboard
 Features: PSI · Wasserstein · Rolling Window · Violin+Box · Sankey ·
 Correlation Heatmap · PDF Export · CSV Upload · Date Picker + Threshold Slider
@@ -12,7 +12,8 @@ import streamlit as st
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
-from drift_detection import run_all_drift_checks, rolling_drift_window
+from drift_detection  import run_all_drift_checks, rolling_drift_window
+from ml_drift_engine  import run_ml_drift_checks
 from visualization   import (
     purchase_amount_distribution, category_distribution,
     payment_method_distribution, purchase_amount_trend,
@@ -22,6 +23,8 @@ from visualization   import (
 from pdf_report       import generate_pdf, REPORTLAB_OK
 from smart_mapper     import smart_load, mapping_summary_html
 from advanced_charts  import (violin_box_plot, sankey_diagram, correlation_heatmap,
+                              ml_model_comparison_chart, ml_feature_importance_chart,
+                              ml_anomaly_score_chart, ml_drift_gauge,
                               psi_chart, rolling_window_chart, wasserstein_gauge,
                               waterfall_chart, drilldown_distribution)
 from custom_rules     import evaluate_rules, get_categories, get_payment_methods, RULE_TYPES
@@ -626,9 +629,11 @@ def main():
                         st.error(f"Prediction error: {e}")
         st.stop()
 
-    # ── Run drift detection ───────────────────────────────────────────────────
-    with st.spinner("Running drift tests…"):
+    # ── Run drift detection — statistical + ML ───────────────────────────────
+    with st.spinner("Running statistical tests…"):
         results = run_all_drift_checks(baseline_df, current_df, alpha=alpha)
+    with st.spinner("Training ML models…"):
+        ml_results = run_ml_drift_checks(baseline_df, current_df)
 
     # ─────────────────────────────────────────────────────────────────────────
     # SECTION 1 — Drift Detection Results
@@ -637,9 +642,14 @@ def main():
                 unsafe_allow_html=True)
 
     feature_map = {
-        "purchase_amount":  ("💵","Purchase Amount",  "Kolmogorov-Smirnov"),
-        "product_category": ("🛒","Product Category", "Chi-Square"),
-        "payment_method":   ("💳","Payment Method",   "Chi-Square"),
+        "purchase_amount":  ("💵","Purchase Amount",  "KS + RF AUC"),
+        "product_category": ("🛒","Product Category", "Chi-Sq + RF AUC"),
+        "payment_method":   ("💳","Payment Method",   "Chi-Sq + RF AUC"),
+    }
+    key_map = {
+        "purchase_amount":  "Purchase_Amount",
+        "product_category": "Product_Category",
+        "payment_method":   "Payment_Method",
     }
     cols = st.columns(3)
     for col, (key, (icon, label, test)) in zip(cols, feature_map.items()):
@@ -649,6 +659,12 @@ def main():
         badge_cls = "drift-yes" if drift else "drift-no"
         badge_txt = "⚠ Drift Detected" if drift else "✓ Stable"
         pval_color = "#ff7096" if drift else "#06D6A0"
+        # Pre-compute ML values outside the f-string to avoid {{}} hashability bug
+        _feat_key  = key_map.get(key, "")
+        _pf_empty  = {"auc": 0, "drift_score": 0}
+        _pf        = ml_results["per_feature"].get(_feat_key, _pf_empty)
+        _ml_auc    = _pf.get("auc", 0)
+        _ml_score  = _pf.get("drift_score", 0)
         with col:
             st.markdown(f"""
             <div class="drift-card {card_cls}">
@@ -661,7 +677,9 @@ def main():
               <span class="drift-badge {badge_cls}">{badge_txt}</span>
               <div class="dc-stats">
                 p-value &nbsp;&nbsp;: <span class="hi" style="color:{pval_color}">{r['p_value']:.6f}</span><br>
-                statistic: <span>{r['statistic']:.4f}</span>
+                statistic: <span>{r['statistic']:.4f}</span><br>
+                ML AUC&nbsp;&nbsp;&nbsp;: <span style="color:#7eb3ff">{_ml_auc:.4f}</span><br>
+                ML Score&nbsp;&nbsp;: <span style="color:#7eb3ff">{_ml_score:.4f}</span>
               </div>
             </div>""", unsafe_allow_html=True)
 
@@ -708,51 +726,73 @@ def main():
     st.divider()
 
     # ─────────────────────────────────────────────────────────────────────────
-    # SECTION 2 — Advanced Metrics
+    # SECTION 2 — ML Drift Analysis
     # ─────────────────────────────────────────────────────────────────────────
-    st.markdown('<div class="section-heading"><span class="sh-icon">📐</span> Advanced Drift Metrics</div>',
+    st.markdown('<div class="section-heading"><span class="sh-icon">🤖</span> ML Drift Analysis</div>',
                 unsafe_allow_html=True)
+    st.caption("Three ML models independently detect drift. Score 0 = identical, 1 = fully different.")
 
-    adv_tab1, adv_tab2, adv_tab3 = st.tabs([
-        "📊  PSI Score", "📏  Wasserstein Distance", "🔄  Rolling Window"
+    ml_kpi1, ml_kpi2, ml_kpi3, ml_kpi4 = st.columns(4)
+    ml_kpi1.metric("Ensemble Score",  f"{ml_results['ensemble_score']:.4f}")
+    ml_kpi2.metric("Drift Verdict",   "⚠ Drift" if ml_results["ensemble_drift"] else "✓ Stable")
+    ml_kpi3.metric("Severity",        ml_results["ensemble_level"])
+    ml_kpi4.metric("Best RF AUC",     f"{ml_results['random_forest']['auc']:.4f}",
+                   help="AUC >0.65 means models can separate baseline from current = drift detected")
+
+    ml_tab1, ml_tab2, ml_tab3, ml_tab4 = st.tabs([
+        "🎯 Model Comparison", "🔍 Feature Importance",
+        "🚨 Anomaly Scores",   "⚡ Drift Gauge"
     ])
+    with ml_tab1:
+        st.caption("All three ML models independently score drift. Ensemble bar = majority vote result.")
+        show_chart(ml_model_comparison_chart(ml_results))
+        mc1, mc2, mc3 = st.columns(3)
+        mc1.metric("Isolation Forest",  f"{ml_results['isolation_forest']['drift_score']:.4f}",
+                   help=f"Anomaly rate: {ml_results['isolation_forest']['anomaly_rate']:.2%}")
+        mc2.metric("Random Forest AUC", f"{ml_results['random_forest']['auc']:.4f}")
+        mc3.metric("Gradient Boosting", f"{ml_results['gradient_boosting']['auc']:.4f}")
 
-    with adv_tab1:
-        st.caption("Population Stability Index — measures how much a distribution has shifted. PSI > 0.25 requires immediate action.")
-        show_chart(psi_chart(psi))
+    with ml_tab2:
+        st.caption("Per-feature RF classifier AUC. Higher = that feature drifted more between periods.")
+        show_chart(ml_feature_importance_chart(ml_results))
+        pf = ml_results["per_feature"]
+        fi1, fi2, fi3 = st.columns(3)
+        for col_w, fname in zip([fi1,fi2,fi3],
+                                ["Purchase_Amount","Product_Category","Payment_Method"]):
+            fd = pf.get(fname, {})
+            col_w.metric(fname.replace("_"," "),
+                         f"AUC {fd.get('auc',0):.4f}",
+                         delta=fd.get("level",""))
 
-    with adv_tab2:
-        st.caption("Earth Mover's Distance — how much 'work' transforms the baseline into the current distribution. Expressed in dollar units.")
-        base_mean = float(results["summary_stats"].loc["mean","Baseline"]) if "mean" in results["summary_stats"].index else 100
-        show_chart(wasserstein_gauge(wss, base_mean))
-        st.markdown(f"""
-        <div style="background:#111827;border:1px solid #1e2235;border-radius:12px;padding:1rem 1.3rem;margin-top:.5rem">
-          <div style="font-size:.78rem;color:#475569;text-transform:uppercase;letter-spacing:.08em">Interpretation</div>
-          <div style="font-size:1rem;color:#e2e8f0;margin-top:.4rem">{wss.get('interpretation','—')}</div>
-          <div style="font-size:.85rem;color:#64748b;margin-top:.3rem">
-            A shift of ${wss.get('distance',0):.2f} represents
-            <span style="color:#FFB703;font-weight:600">{wss.get('pct_shift',0):.1f}%</span>
-            of the baseline mean purchase amount.
-          </div>
-        </div>""", unsafe_allow_html=True)
+    with ml_tab3:
+        st.caption("Isolation Forest trains on baseline. Current rows scored as anomalous = most different from baseline pattern.")
+        show_chart(ml_anomaly_score_chart(ml_results, baseline_df, current_df))
+        iso = ml_results["isolation_forest"]
+        ai1, ai2, ai3 = st.columns(3)
+        ai1.metric("Anomalies Detected", f"{iso['n_anomalies']:,}")
+        ai2.metric("Anomaly Rate",        f"{iso['anomaly_rate']:.2%}")
+        ai3.metric("IF Drift Score",      f"{iso['drift_score']:.4f}")
 
-    with adv_tab3:
-        st.caption("Sliding 30-day window drift analysis — reveals exactly when behavioral changes began. Red markers = drift detected in that window.")
-        with st.spinner("Computing rolling windows…"):
-            rolling_df = rolling_drift_window(combined_df, window_days=30, step_days=7)
-
-        show_chart(rolling_window_chart(rolling_df))
-
-        if not rolling_df.empty:
-            drift_windows = rolling_df["drift"].sum()
-            total_windows = len(rolling_df)
-            st.caption(f"Drift detected in **{drift_windows}** of **{total_windows}** windows "
-                       f"({drift_windows/total_windows*100:.0f}%)")
+    with ml_tab4:
+        st.caption("Ensemble ML risk gauge. Above 70 = action recommended.")
+        show_chart(ml_drift_gauge(ml_results))
 
     st.divider()
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # SECTION 3 — Distribution Comparisons
+    # Rolling window
+    st.markdown('<div class="section-heading"><span class="sh-icon">📈</span> Rolling Drift Window</div>',
+                unsafe_allow_html=True)
+    st.caption("30-day sliding window across the combined timeline — shows when drift started.")
+    with st.spinner("Computing rolling windows…"):
+        rolling_df = rolling_drift_window(combined_df, window_days=30, step_days=7)
+    show_chart(rolling_window_chart(rolling_df))
+    if not rolling_df.empty:
+        n_drift_w = rolling_df["drift"].sum()
+        st.caption(f"**{n_drift_w}** of **{len(rolling_df)}** windows show drift (p < α={alpha:.2f})")
+
+    st.divider()
+
+        # SECTION 3 — Distribution Comparisons
     # ─────────────────────────────────────────────────────────────────────────
     st.markdown('<div class="section-heading"><span class="sh-icon">📈</span> Distribution Comparisons</div>',
                 unsafe_allow_html=True)

@@ -1,0 +1,31 @@
+Date,Customer_ID,Product_Category,Purchase_Amount,Payment_Method
+2024-01-01,C1000,Clothing,21.74,PayPal
+2024-01-02,C1001,Books,73.74,Credit Card
+2024-01-03,C1002,Groceries,33.77,Credit Card
+2024-01-04,C1003,Clothing,43.23,Credit Card
+2024-01-05,C1004,Electronics,33.74,PayPal
+2024-01-06,C1005,Electronics,240.28,Debit Card
+2024-01-07,C1006,Electronics,54.01,Credit Card
+2024-01-08,C1007,Books,23.43,Credit Card
+2024-01-09,C1008,Clothing,105.43,Credit Card
+2024-01-10,C1009,Groceries,20.56,Credit Card
+2024-01-11,C1010,Electronics,64.53,PayPal
+2024-01-12,C1011,Books,11.38,Debit Card
+2024-01-13,C1012,Groceries,18.87,PayPal
+2024-01-14,C1013,Electronics,63.91,Debit Card
+2024-01-15,C1014,Electronics,98.57,Credit Card
+2024-01-16,C1015,Electronics,62.62,PayPal
+2024-01-17,C1016,Electronics,49.77,PayPal
+2024-01-18,C1017,Clothing,42.91,Debit Card
+2024-01-19,C1018,Clothing,16.73,PayPal
+2024-01-20,C1019,Electronics,30.7,Debit Card
+2024-01-21,C1020,Clothing,37.77,Debit Card
+2024-01-22,C1021,Electronics,127.19,Debit Card
+2024-01-23,C1022,Electronics,71.87,Credit Card
+2024-01-24,C1023,Clothing,13.32,Credit Card
+2024-01-25,C1024,Clothing,70.76,Credit Card
+2024-01-26,C1025,Groceries,40.12,Debit Card
+2024-01-27,C1026,Electronics,31.77,Credit Card
+2024-01-28,C1027,Clothing,89.06,Debit Card
+2024-01-29,C1028,Clothing,124.56,Cash
+2024-01-30,C1029,Electronics,115.01,Credit Card

@@ -340,6 +340,50 @@ def main():
                 st.warning("⚠️ Upload both files to enable comparison")
             show_upload_guide()
 
+            # ── Sample CSV downloads ──────────────────────────────────────
+            st.markdown("**📥 Download Sample CSVs**")
+            st.caption("Not sure what format to use? Download these sample files to see the expected structure.")
+            import os as _os
+            _here = _os.path.dirname(_os.path.abspath(__file__))
+
+            _sc1, _sc2 = st.columns(2)
+            with _sc1:
+                _sbase_path = _os.path.join(_here, "sample_baseline.csv")
+                if _os.path.exists(_sbase_path):
+                    with open(_sbase_path) as _f:
+                        st.download_button(
+                            "⬇️ sample_baseline.csv",
+                            data=_f.read(),
+                            file_name="sample_baseline.csv",
+                            mime="text/csv",
+                            use_container_width=True,
+                            help="30-row baseline sample — Jan 2024",
+                        )
+            with _sc2:
+                _scurr_path = _os.path.join(_here, "sample_current.csv")
+                if _os.path.exists(_scurr_path):
+                    with open(_scurr_path) as _f:
+                        st.download_button(
+                            "⬇️ sample_current.csv",
+                            data=_f.read(),
+                            file_name="sample_current.csv",
+                            mime="text/csv",
+                            use_container_width=True,
+                            help="30-row current sample with drift — Jul 2024",
+                        )
+            st.markdown("""
+            <div style="background:#0d1a2e;border:1px solid #1e3a5f;border-radius:10px;
+                        padding:.7rem 1rem;margin:.4rem 0;font-size:.78rem;color:#94a3b8">
+              <b style="color:#3A86FF">Required columns:</b>
+              <span style="font-family:monospace;color:#FFB703"> Date</span> ·
+              <span style="font-family:monospace;color:#FFB703"> Purchase_Amount</span> ·
+              <span style="font-family:monospace;color:#FFB703"> Product_Category</span> ·
+              <span style="font-family:monospace;color:#FFB703"> Payment_Method</span><br>
+              Any column names work — the system auto-detects them.
+              Extra columns are ignored.
+            </div>
+            """, unsafe_allow_html=True)
+
         # ── Bulk Scanner uploader ────────────────────────────────────────────
         bulk_files = []
         if upload_mode == "Bulk Scanner":
@@ -609,24 +653,175 @@ def main():
             if baseline_df.empty:
                 st.warning("Baseline data is empty. Cannot train prediction model.")
             else:
-                with st.spinner("Training model & predicting..."):
+                with st.spinner("Training Random Forest & building explanation…"):
                     try:
                         from prediction_engine import train_and_predict
-                        predicted_amt, expected_std = train_and_predict(baseline_df, user_cat, user_pay)
-                        if predicted_amt is not None:
-                            st.markdown(f"""
-                            <div style="background:{_MET_BG}; border:1px solid {_BOR2}; border-radius:14px; padding:1.2rem 1.5rem; margin-top:0.8rem; text-align:center;">
-                                <div style="font-size:0.8rem; color:{_DIM}; text-transform:uppercase; letter-spacing:0.1em; font-weight:600; margin-bottom:0.3rem;">Predicted Purchase Amount</div>
-                                <div style="font-size:2.2rem; font-family:'IBM Plex Mono',monospace; color:#3A86FF; font-weight:600;">${predicted_amt:.2f}</div>
-                                <div style="font-size:0.85rem; color:{_MID}; margin-top:0.4rem;">
-                                    Expected Range (±1 SD): <b>${predicted_amt - expected_std:.2f}</b> to <b>${predicted_amt + expected_std:.2f}</b>
-                                </div>
-                            </div>
-                            """, unsafe_allow_html=True)
-                        else:
-                            st.error("Not enough baseline data to generate a prediction.")
+                        predicted_amt, expected_std, explain = train_and_predict(
+                            baseline_df, user_cat, user_pay
+                        )
                     except Exception as e:
                         st.error(f"Prediction error: {e}")
+                        explain = None
+
+                if explain:
+                    # ── Headline prediction card ──────────────────────────
+                    _rank    = explain["rank"]
+                    _total   = explain["total_combos"]
+                    _rank_txt = f"#{_rank} most expensive of {_total} combos"
+                    _vs_avg  = explain["predicted_amt"] - explain["global_mean"]
+                    _vs_txt  = f"{_vs_avg:+.2f} vs baseline average"
+
+                    st.markdown(f"""
+                    <div style="background:{_MET_BG};border:1px solid {_BOR2};border-radius:16px;
+                                padding:1.4rem 1.6rem;margin:.8rem 0">
+                      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;align-items:center">
+                        <div style="text-align:center">
+                          <div style="font-size:.72rem;color:{_DIM};text-transform:uppercase;
+                               letter-spacing:.1em;font-weight:600;margin-bottom:.3rem">
+                            Predicted Amount
+                          </div>
+                          <div style="font-size:2.4rem;font-family:'IBM Plex Mono',monospace;
+                               color:#3A86FF;font-weight:700">${explain['predicted_amt']:.2f}</div>
+                          <div style="font-size:.78rem;color:{_MID};margin-top:.2rem">{_vs_txt}</div>
+                        </div>
+                        <div style="text-align:center;border-left:1px solid {_BORDER};
+                                    border-right:1px solid {_BORDER};padding:0 1rem">
+                          <div style="font-size:.72rem;color:{_DIM};text-transform:uppercase;
+                               letter-spacing:.1em;font-weight:600;margin-bottom:.3rem">
+                            90% Confidence Range
+                          </div>
+                          <div style="font-size:1.3rem;font-family:'IBM Plex Mono',monospace;
+                               color:#FFB703;font-weight:600">
+                            ${explain['ci_low']:.2f} – ${explain['ci_high']:.2f}
+                          </div>
+                          <div style="font-size:.78rem;color:{_MID};margin-top:.2rem">
+                            Based on {explain['n_trees']} decision trees
+                          </div>
+                        </div>
+                        <div style="text-align:center">
+                          <div style="font-size:.72rem;color:{_DIM};text-transform:uppercase;
+                               letter-spacing:.1em;font-weight:600;margin-bottom:.3rem">
+                            Combo Rank
+                          </div>
+                          <div style="font-size:1.3rem;font-family:'IBM Plex Mono',monospace;
+                               color:#9B5DE5;font-weight:600">#{_rank} / {_total}</div>
+                          <div style="font-size:.78rem;color:{_MID};margin-top:.2rem">
+                            {_rank_txt}
+                          </div>
+                        </div>
+                      </div>
+                    </div>""", unsafe_allow_html=True)
+
+                    st.markdown("<br>", unsafe_allow_html=True)
+                    st.markdown('<div class="section-heading"><span class="sh-icon">🔍</span> Why this prediction?</div>',
+                                unsafe_allow_html=True)
+
+                    # ── Explanation tabs ──────────────────────────────────
+                    ex_tab1, ex_tab2, ex_tab3, ex_tab4 = st.tabs([
+                        "📊 Feature Impact", "🛒 Category Breakdown",
+                        "💳 Payment Breakdown", "🏆 All Combos"
+                    ])
+
+                    with ex_tab1:
+                        st.caption("How much each input influenced the prediction.")
+                        # Feature importance bars
+                        cat_imp = explain["cat_importance"]
+                        pay_imp = explain["pay_importance"]
+                        st.markdown(f"""
+                        <div style="margin:.8rem 0">
+                          <div style="font-size:.78rem;color:{_MID};margin-bottom:.3rem">
+                            Product Category &nbsp;<b style="color:{_TEXT}">{user_cat}</b>
+                          </div>
+                          <div style="background:{_BG};border-radius:6px;height:18px;overflow:hidden;margin-bottom:.8rem">
+                            <div style="background:#3A86FF;width:{min(cat_imp,100)}%;height:100%;border-radius:6px;
+                                 display:flex;align-items:center;padding-left:8px;
+                                 font-size:.72rem;font-weight:700;color:#fff">{cat_imp:.1f}%</div>
+                          </div>
+                          <div style="font-size:.78rem;color:{_MID};margin-bottom:.3rem">
+                            Payment Method &nbsp;<b style="color:{_TEXT}">{user_pay}</b>
+                          </div>
+                          <div style="background:{_BG};border-radius:6px;height:18px;overflow:hidden">
+                            <div style="background:#9B5DE5;width:{min(pay_imp,100)}%;height:100%;border-radius:6px;
+                                 display:flex;align-items:center;padding-left:8px;
+                                 font-size:.72rem;font-weight:700;color:#fff">{pay_imp:.1f}%</div>
+                          </div>
+                        </div>
+                        <div style="font-size:.76rem;color:{_DIM};margin-top:.8rem;padding:.6rem .8rem;
+                             background:{_BG2};border-radius:8px">
+                          <b style="color:{_TEXT}">How to read this:</b> The Random Forest model learned from
+                          {explain['n_training_rows']:,} baseline transactions.
+                          Product Category drove <b style="color:#3A86FF">{cat_imp:.1f}%</b> of the
+                          prediction and Payment Method drove <b style="color:#9B5DE5">{pay_imp:.1f}%</b>.
+                          Higher % = that feature had more influence on the predicted amount.
+                        </div>
+                        """, unsafe_allow_html=True)
+
+                        # Actual vs predicted for this combo
+                        if explain["combo_actual_mean"] is not None:
+                            _act = explain["combo_actual_mean"]
+                            _diff = explain["predicted_amt"] - _act
+                            st.metric(
+                                f"Actual avg for {user_cat} + {user_pay} in baseline",
+                                f"${_act:.2f}",
+                                delta=f"Prediction off by ${_diff:+.2f}",
+                                delta_color="off",
+                                help=f"Based on {explain['combo_n']} real transactions in baseline data"
+                            )
+
+                    with ex_tab2:
+                        st.caption(f"Average spend per category in baseline data. Your selected category: **{user_cat}**")
+                        cat_df = explain["cat_avgs"].reset_index()
+                        cat_df.columns = ["Category", "Avg Spend ($)", "Transactions", "Std Dev ($)"]
+                        cat_df["Avg Spend ($)"] = cat_df["Avg Spend ($)"].apply(lambda x: f"${x:.2f}")
+                        cat_df["Std Dev ($)"]   = cat_df["Std Dev ($)"].apply(lambda x: f"±${x:.2f}")
+                        # Highlight selected row
+                        def _highlight(row):
+                            if row["Category"] == user_cat:
+                                return [f"background:rgba(58,134,255,0.15)"] * len(row)
+                            return [""] * len(row)
+                        st.dataframe(
+                            cat_df.style.apply(_highlight, axis=1),
+                            use_container_width=True, hide_index=True
+                        )
+                        st.caption(f"**{user_cat}** transactions = {explain['combo_n']} in baseline · "
+                                   f"Global baseline mean = ${explain['global_mean']:.2f}")
+
+                    with ex_tab3:
+                        st.caption(f"Average spend per payment method in baseline data. Your selected method: **{user_pay}**")
+                        pay_df = explain["pay_avgs"].reset_index()
+                        pay_df.columns = ["Payment Method", "Avg Spend ($)", "Transactions", "Std Dev ($)"]
+                        pay_df["Avg Spend ($)"] = pay_df["Avg Spend ($)"].apply(lambda x: f"${x:.2f}")
+                        pay_df["Std Dev ($)"]   = pay_df["Std Dev ($)"].apply(lambda x: f"±${x:.2f}")
+                        def _highlight2(row):
+                            if row["Payment Method"] == user_pay:
+                                return [f"background:rgba(155,93,229,0.15)"] * len(row)
+                            return [""] * len(row)
+                        st.dataframe(
+                            pay_df.style.apply(_highlight2, axis=1),
+                            use_container_width=True, hide_index=True
+                        )
+
+                    with ex_tab4:
+                        st.caption("Predicted amounts for every category + payment combination, ranked highest to lowest.")
+                        combos_df = explain["all_combos"].copy()
+                        combos_df["Predicted_Amount"] = combos_df["Predicted_Amount"].apply(
+                            lambda x: f"${x:.2f}"
+                        )
+                        combos_df["Rank"] = range(1, len(combos_df)+1)
+                        combos_df = combos_df[["Rank","Product_Category","Payment_Method","Predicted_Amount"]]
+                        def _highlight3(row):
+                            if (row["Product_Category"] == user_cat and
+                                row["Payment_Method"]   == user_pay):
+                                return ["background:rgba(58,134,255,0.2)"] * len(row)
+                            return [""] * len(row)
+                        st.dataframe(
+                            combos_df.style.apply(_highlight3, axis=1),
+                            use_container_width=True, hide_index=True
+                        )
+                        st.caption(f"Your selection ({user_cat} + {user_pay}) is highlighted in blue — ranked #{_rank} of {_total}.")
+
+                elif explain is None and not baseline_df.empty:
+                    st.error("Not enough baseline data to generate a prediction.")
         st.stop()
 
     # ── Run drift detection — statistical + ML ───────────────────────────────

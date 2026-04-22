@@ -1,0 +1,31 @@
+Date,Customer_ID,Product_Category,Purchase_Amount,Payment_Method
+2024-07-01,C2000,Electronics,543.25,Cash
+2024-07-02,C2001,Groceries,116.41,Credit Card
+2024-07-03,C2002,Electronics,125.44,Debit Card
+2024-07-04,C2003,Electronics,93.04,Credit Card
+2024-07-05,C2004,Electronics,17.69,Cash
+2024-07-06,C2005,Electronics,97.14,PayPal
+2024-07-07,C2006,Books,105.03,Credit Card
+2024-07-08,C2007,Groceries,913.17,PayPal
+2024-07-09,C2008,Clothing,83.67,PayPal
+2024-07-10,C2009,Groceries,130.5,PayPal
+2024-07-11,C2010,Groceries,96.42,PayPal
+2024-07-12,C2011,Electronics,34.75,Credit Card
+2024-07-13,C2012,Groceries,278.26,Credit Card
+2024-07-14,C2013,Electronics,195.73,PayPal
+2024-07-15,C2014,Groceries,202.74,Cash
+2024-07-16,C2015,Groceries,43.88,PayPal
+2024-07-17,C2016,Electronics,351.61,Debit Card
+2024-07-18,C2017,Electronics,28.17,Debit Card
+2024-07-19,C2018,Electronics,168.71,PayPal
+2024-07-20,C2019,Electronics,714.38,PayPal
+2024-07-21,C2020,Groceries,40.79,PayPal
+2024-07-22,C2021,Groceries,59.76,PayPal
+2024-07-23,C2022,Electronics,108.82,PayPal
+2024-07-24,C2023,Electronics,63.24,Credit Card
+2024-07-25,C2024,Electronics,24.64,Credit Card
+2024-07-26,C2025,Electronics,105.82,PayPal
+2024-07-27,C2026,Electronics,38.24,PayPal
+2024-07-28,C2027,Electronics,152.36,Credit Card
+2024-07-29,C2028,Books,43.49,Credit Card
+2024-07-30,C2029,Electronics,401.39,PayPal
